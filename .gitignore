@@ -207,7 +207,3 @@ dmypy.json
 ./data/
 !./data/catalogs
 tests/**/output
-
-### All IDE Stuff (duplicates some of above)
-.idea/
-!/.idea/codeStyles/

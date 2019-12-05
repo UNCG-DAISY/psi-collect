@@ -52,17 +52,17 @@ class TestCataloging(TestCase):
             assert 'C25959144.jpg ... matches pattern!' in str(out)
 
         with self.subTest(msg='Calculated size of files'):
-            assert 'Calculating sizes of files ... ' in str(out)
+            assert 'Getting size of file 1 of 2' in str(out)
 
         with self.subTest(msg='Calculated modify times of files'):
-            assert 'Calculating modify time of files ... ' in str(out)
+            assert 'Getting date taken from file 1 of 2' in str(out)
 
         with self.subTest(msg='Saved to disk'):
             assert 'Saved catalog to disk! Basic data is complete! Moving on to .geom specific data ... ' in str(out)
 
         with self.subTest(msg='All three files processed'):
-            assert 'Processing file 1 of 2 (0.00%)' in str(out)
-            assert 'Processing file 2 of 2 (50.00%)' in str(out)
+            assert 'Processing .geom attributes of file 1 of 2' in str(out)
+            assert 'Processing .geom attributes of file 2 of 2' in str(out)
 
         with self.subTest(msg='All default tags were found in a .geom file'):
             assert str(out).count('Found 9 value(s)') == 2
