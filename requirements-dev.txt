@@ -1,0 +1,6 @@
+bumpversion
+codecov
+pre-commit
+pytest
+pytest-runner
+pytest-cov

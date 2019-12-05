@@ -1,0 +1,20 @@
+# http://editorconfig.org
+
+root = true
+
+[*]
+indent_style = space
+trim_trailing_whitespace = true
+insert_final_newline = true
+charset = utf-8
+end_of_line = lf
+
+[*.py]
+indent_size = 4
+ij_python_blank_line_at_file_end = true
+
+[*.{yml, json}]
+indent_size = 2
+
+[*.md]
+ij_wrap_on_typing = true

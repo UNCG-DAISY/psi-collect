@@ -1,0 +1,27 @@
+ignore:
+#  - "path/to/folder"  # ignore folders and all its contents
+#  - "test_*.rb"       # wildcards accepted
+#  - "**/*.py"         # glob accepted
+#  - "[a-z]+/test_.*"  # regexp accepted
+
+  # Setup configuration
+  - 'setup.py'
+
+  # Test files
+  - '**/tests'
+
+  # Command-line runners
+  - '**/psicollect/common/pstorm.py'
+  - '**/psicollect/cataloging/catalog.py'
+  - '**/psicollect/cataloging/stack.py'
+  - '**/psicollect/collector/collect.py'
+
+coverage:
+  range: 50..90
+  round: down
+  precision: 2
+#  status:
+#    project:
+#      default:
+#        # basic
+#        target: 75%
