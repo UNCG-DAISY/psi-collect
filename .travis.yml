@@ -48,6 +48,7 @@ after_failure:
 
 # Deploy a snapshot
 before_deploy:
+- pip install bump2version
 - bump2version patch --allow-dirty --list --new-version '{$(git describe)}' --no-commit --tag-name '{$(git describe)}'
 deploy:
   provider: pypi
