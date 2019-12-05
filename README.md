@@ -1,16 +1,16 @@
 # Post-Storm Imagery Collection
 
-[![Travis-CI](https://travis-ci.org/UNCG-CSE/Poststorm_Imagery.svg?branch=master)](
-https://travis-ci.org/UNCG-CSE/Poststorm_Imagery)
-[![CodeCov](https://codecov.io/gh/UNCG-CSE/Poststorm_Imagery/branch/master/graph/badge.svg?token=LWncqYANtK)](
-https://codecov.io/gh/UNCG-CSE/Poststorm_Imagery/branch/master)
-[![ReadTheDocs](https://readthedocs.org/projects/post-storm-imagery/badge/?version=master)](
-https://post-storm-imagery.readthedocs.io/en/latest/?badge=master)
+[![Travis-CI](https://travis-ci.org/P-Sick/psi-collect.svg?branch=master)](
+https://travis-ci.org/P-Sick/psi-collect)
+[![CodeCov](https://codecov.io/gh/P-Sick/psi-collect/branch/master/graph/badge.svg)](
+https://codecov.io/gh/P-Sick/psi-collect)
+[![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
+https://psi-collect.readthedocs.io/en/latest/)
 
 Collection, aggregation, and cataloging of storm imagery for the purpose of data sciences and analysis.
 
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
-https://post-storm-imagery.readthedocs.io/)
+https://psi-collect.readthedocs.io/en/latest/)
 
 ## Team Members
 

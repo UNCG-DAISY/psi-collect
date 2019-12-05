@@ -4,7 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-bumpversion = "*"
+bump2version = "*"
 codecov = "*"
 pre-commit = "*"
 pytest = "*"

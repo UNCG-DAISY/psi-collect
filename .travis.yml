@@ -43,6 +43,14 @@ matrix:
 
 after_failure:
 # POST all failures on the main branch to Discord
-- wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
-- chmod +x send.sh
-- ./send.sh failure $WEBHOOK_URL
+- chmod +x ./notify_failure_discord.sh
+- ./notify_failure_discord.sh failure $WEBHOOK_URL
+
+# Deploy a snapshot
+before_deploy:
+- bump2version patch --allow-dirty --list --new-version '{$(git describe)}' --no-commit --tag-name '{$(git describe)}'
+deploy:
+  provider: pypi
+  user: "__token__"
+  password: $PYPI_TOKEN
+  skip_existing: true

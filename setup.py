@@ -4,15 +4,15 @@
 """The setup script."""
 from setuptools import setup, find_packages
 
-REPO_URL = 'https://github.com/UNCG-CSE/Poststorm_Imagery'
-DOCS_URL = 'https://post-storm-imagery.readthedocs.io/en/latest/'
+REPO_URL = 'https://github.com/P-Sick/psi-collect/'
+DOCS_URL = 'https://psi-collect.readthedocs.io/en/latest/'
 
 with open('README.md', 'r', encoding='utf8') as fh:
     long_description = fh.read()
 
 setup(
     name='psi-collect',
-    version='0.5.1',
+    version='0.5.3',
     author='Team P-Sick',
     author_email='mcmoretz@uncg.edu',
     description='Collection, aggregation, and cataloging of storm imagery for '
