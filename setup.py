@@ -14,7 +14,6 @@ setup(
     name='psi-collect',
     version='0.5.3',
     author='Team P-Sick',
-    author_email='mcmoretz@uncg.edu',
     description='Collection, aggregation, and cataloging of storm imagery for '
                 'the purpose of data sciences and analysis.',
     classifiers=[
@@ -42,7 +41,7 @@ setup(
     project_urls={
         'Documentation': DOCS_URL,
         'Source': REPO_URL,
-        'Tracker': REPO_URL + '/issues',
+        'Tracker': REPO_URL + 'issues',
     },
     python_requires='>=3.6',
     entry_points={  # Executable scripts as command-line

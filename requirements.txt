@@ -1,5 +1,5 @@
 requests
 tqdm
 pandas
-Pillow
+pillow
 imageio
