@@ -1,11 +1,15 @@
 # Post-Storm Imagery Collection
 
+[![PyPI](https://img.shields.io/pypi/v/psi-collect)](
+https://pypi.org/project/psi-collect)
 [![Travis-CI](https://travis-ci.org/P-Sick/psi-collect.svg?branch=master)](
 https://travis-ci.org/P-Sick/psi-collect)
-[![CodeCov](https://codecov.io/gh/P-Sick/psi-collect/branch/master/graph/badge.svg)](
+[![Codecov](https://img.shields.io/codecov/c/gh/P-Sick/psi-collect)](
 https://codecov.io/gh/P-Sick/psi-collect)
 [![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
 https://psi-collect.readthedocs.io/en/latest/)
+[![Last Commit](https://img.shields.io/github/last-commit/P-Sick/psi-collect)](
+https://github.com/P-Sick/psi-collect/commits/master)
 
 Collection, aggregation, and cataloging of storm imagery for the purpose of data sciences and analysis.
 
