@@ -2,14 +2,14 @@
 
 [![PyPI](https://img.shields.io/pypi/v/psi-collect)](
 https://pypi.org/project/psi-collect)
-[![Travis-CI](https://travis-ci.org/P-Sick/psi-collect.svg?branch=master)](
-https://travis-ci.org/P-Sick/psi-collect)
-[![Codecov](https://img.shields.io/codecov/c/gh/P-Sick/psi-collect)](
-https://codecov.io/gh/P-Sick/psi-collect)
+[![Travis-CI](https://travis-ci.org/UNCG-DAISY/psi-collect.svg?branch=master)](
+https://travis-ci.org/UNCG-DAISY/psi-collect)
+[![Codecov](https://img.shields.io/codecov/c/gh/UNCG-DAISY/psi-collect)](
+https://codecov.io/gh/UNCG-DAISY/psi-collect)
 [![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
 https://psi-collect.readthedocs.io/en/latest/)
-[![Last Commit](https://img.shields.io/github/last-commit/P-Sick/psi-collect)](
-https://github.com/P-Sick/psi-collect/commits/master)
+[![Last Commit](https://img.shields.io/github/last-commit/UNCG-DAISY/psi-collect)](
+https://github.com/UNCG-DAISY/psi-collect/commits/master)
 
 Collection, aggregation, and cataloging of storm imagery for the purpose of data sciences and analysis.
 
