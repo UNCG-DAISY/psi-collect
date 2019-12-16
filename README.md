@@ -16,11 +16,11 @@ https://psi-collect.readthedocs.io/en/latest/)
 
 - [**Matthew Moretz**](https://github.com/Matmorcat)
 - [**Daniel Foster**](https://github.com/dlfosterbot)
-- [**Evan Goldstein**](https://github.com/ebgoldstein)
-- [**Somya Mohanty**](https://github.com/somyamohanty)
 - [**John Weber**](https://github.com/JWeb56)
 - [**Rinty Chowdhury**](https://github.com/rintychy)
 - [**Shah Nafis Rafique**](https://github.com/ShahNafisRafique)
+- [**Evan Goldstein**](https://github.com/ebgoldstein)
+- [**Somya Mohanty**](https://github.com/somyamohanty)
 
 ## Usage
 
