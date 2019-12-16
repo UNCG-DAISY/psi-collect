@@ -67,4 +67,4 @@ then the `PYTHONPATH` is not configured correctly!*
 
 ## Data Source 💾
 
-- NOAA landing page for the post-storm imagery, [**here**]( https://storms.ngs.noaa.gov)
+- NOAA landing page for the post-storm Emergency Response Imagery, [**here**]( https://storms.ngs.noaa.gov)
