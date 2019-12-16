@@ -7,7 +7,7 @@ https://codecov.io/gh/P-Sick/psi-collect)
 [![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
 https://psi-collect.readthedocs.io/en/latest/)
 
-Collection, aggregation, and cataloging of storm imagery for the purpose of data sciences and analysis.
+Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
 
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
 https://psi-collect.readthedocs.io/en/latest/)
