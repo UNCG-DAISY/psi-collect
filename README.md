@@ -68,4 +68,3 @@ then the `PYTHONPATH` is not configured correctly!*
 ## Data Source 💾
 
 - NOAA landing page for the post-storm imagery, [**here**]( https://storms.ngs.noaa.gov)
-- USGS landing page, [**here**](https://coastal.er.usgs.gov/hurricanes/tools/oblique.php)
