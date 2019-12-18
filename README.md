@@ -11,7 +11,7 @@ https://psi-collect.readthedocs.io/en/latest/)
 [![Last Commit](https://img.shields.io/github/last-commit/UNCG-DAISY/psi-collect)](
 https://github.com/UNCG-DAISY/psi-collect/commits/master)
 
-Collection, aggregation, and cataloging of storm imagery for the purpose of data sciences and analysis.
+Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
 
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
 https://psi-collect.readthedocs.io/en/latest/)
@@ -20,11 +20,11 @@ https://psi-collect.readthedocs.io/en/latest/)
 
 - [**Matthew Moretz**](https://github.com/Matmorcat)
 - [**Daniel Foster**](https://github.com/dlfosterbot)
-- [**Evan Goldstein**](https://github.com/ebgoldstein)
-- [**Somya Mohanty**](https://github.com/somyamohanty)
 - [**John Weber**](https://github.com/JWeb56)
 - [**Rinty Chowdhury**](https://github.com/rintychy)
 - [**Shah Nafis Rafique**](https://github.com/ShahNafisRafique)
+- [**Evan Goldstein**](https://github.com/ebgoldstein)
+- [**Somya Mohanty**](https://github.com/somyamohanty)
 
 ## Usage
 
@@ -71,5 +71,4 @@ then the `PYTHONPATH` is not configured correctly!*
 
 ## Data Source 💾
 
-- NOAA landing page for the post-storm imagery, [**here**]( https://storms.ngs.noaa.gov)
-- USGS landing page, [**here**](https://coastal.er.usgs.gov/hurricanes/tools/oblique.php)
+- NOAA landing page for the post-storm Emergency Response Imagery, [**here**]( https://storms.ngs.noaa.gov)
