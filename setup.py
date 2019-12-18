@@ -13,7 +13,7 @@ with open('README.md', 'r', encoding='utf8') as fh:
 setup(
     name='psi-collect',
     version='0.5.3',
-    author='Team P-Sick',
+    author='PSI Team',
     description='Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.',
     classifiers=[
         'Development Status :: 4 - Beta',
