@@ -41,11 +41,6 @@ matrix:
     - pip install -U tox-travis
     script: tox
 
-after_failure:
-# POST all failures on the main branch to Discord
-- chmod +x ./notify_failure_discord.sh
-- ./notify_failure_discord.sh failure $WEBHOOK_URL
-
 # Deploy a snapshot
 #before_deploy:
 #- pip install bump2version
