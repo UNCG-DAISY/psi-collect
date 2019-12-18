@@ -39,8 +39,8 @@ process of gathering data. The script can be called via command-line using the a
 !!! note "Important Note"
 
     The script will automatically download all archive files listed, sequentially, to the `--path` specified, or to the
-    default cache folder if `--path` is left out of the parameters. Members of the P-Sick team would run the command
-    with `-p "G:\Shared drives\P-Sick\data"` assuming they have *Google Drive File Stream* as their `G:`
+    default cache folder if `--path` is left out of the parameters. Members of the PSI team would run the command
+    with `-p "G:\Shared drives\PSI\data"` assuming they have *Google Drive File Stream* as their `G:`
     drive (*Windows*).
 
 

@@ -3,5 +3,5 @@
 """Top-level package for Post-Storm Imagery."""
 
 __name__ = 'psicollect'
-__author__ = 'P-Sick'
+__author__ = 'PSI'
 __version__ = '0.5.3'

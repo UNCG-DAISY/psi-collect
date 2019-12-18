@@ -1,6 +1,6 @@
 site_name: 'PSI Collect'
 site_description: 'Collection, aggregation, and cataloging of storm imagery for the purpose of data sciences and analysis.'
-site_author: 'P-Sick Team'
+site_author: 'PSI Team'
 site_url: 'https://post-storm-imagery.readthedocs.io/en/latest/'
 
 repo_url: 'https://github.com/UNCG-DAISY/psi-collect/'
