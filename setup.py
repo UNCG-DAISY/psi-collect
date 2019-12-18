@@ -4,7 +4,7 @@
 """The setup script."""
 from setuptools import setup, find_packages
 
-REPO_URL = 'https://github.com/P-Sick/psi-collect/'
+REPO_URL = 'https://github.com/UNCG-DAISY/psi-collect/'
 DOCS_URL = 'https://psi-collect.readthedocs.io/en/latest/'
 
 with open('README.md', 'r', encoding='utf8') as fh:

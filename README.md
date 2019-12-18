@@ -1,11 +1,15 @@
 # Post-Storm Imagery Collection
 
-[![Travis-CI](https://travis-ci.org/P-Sick/psi-collect.svg?branch=master)](
-https://travis-ci.org/P-Sick/psi-collect)
-[![CodeCov](https://codecov.io/gh/P-Sick/psi-collect/branch/master/graph/badge.svg)](
-https://codecov.io/gh/P-Sick/psi-collect)
+[![PyPI](https://img.shields.io/pypi/v/psi-collect)](
+https://pypi.org/project/psi-collect)
+[![Travis-CI](https://travis-ci.org/UNCG-DAISY/psi-collect.svg?branch=master)](
+https://travis-ci.org/UNCG-DAISY/psi-collect)
+[![Codecov](https://img.shields.io/codecov/c/gh/UNCG-DAISY/psi-collect)](
+https://codecov.io/gh/UNCG-DAISY/psi-collect)
 [![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
 https://psi-collect.readthedocs.io/en/latest/)
+[![Last Commit](https://img.shields.io/github/last-commit/UNCG-DAISY/psi-collect)](
+https://github.com/UNCG-DAISY/psi-collect/commits/master)
 
 Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
 

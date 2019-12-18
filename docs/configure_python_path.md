@@ -2,7 +2,7 @@
 
 ## Requirements
 This guide assumes you obtained a copy of this project by cloning it from
-[our repository](https://github.com/P-Sick/psi-collect/).
+[our repository](https://github.com/UNCG-DAISY/psi-collect/).
 
 ## Actions
 
