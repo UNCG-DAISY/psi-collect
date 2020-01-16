@@ -35,8 +35,9 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     install_requires=['requests', 'tqdm', 'pandas', 'Pillow', 'imageio'],
-    package_data={'catalogs': ['data/catalogs']},
-    packages=find_packages(include=['psicollect.*']),
+    # package_data={'': ['*.csv']},
+    include_package_data=True,
+    packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     project_urls={
         'Documentation': DOCS_URL,
         'Source': REPO_URL,
