@@ -60,4 +60,4 @@ markdown_extensions:
     - pymdownx.tilde
 
 extra:
-    version: 0.5.3
+    version: 1.0.0
