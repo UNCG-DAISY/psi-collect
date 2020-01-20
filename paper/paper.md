@@ -1,5 +1,5 @@
 ---
-title: 'PSIC: A Python module for collecting and cataloging post-storm imagery'
+title: '`psi-collect`: A Python module for post-storm image collection and cataloging'
 tags:
   - Python
   - coastal
