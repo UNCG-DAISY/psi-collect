@@ -36,7 +36,10 @@ bibliography: paper.bib
 ---
 
 # Summary
-
+  Major storms along the coastline often leave deposits of sediment and debris. In developed settings, these deposits require significant clean-up, but this clean-up erases their signature and therefore precludes their study. Synoptic post-event aerial imagery is often the only curated record of these impacts. In the US, a key source for this imagery is the Emergency Response Imagery  collected by the US National Oceanographic and Atmospheric Administration (NOAA)This imagery is often flown before significant clean up occurs, and allows for critical insight into storm impacts along developed and undeveloped coastlines. 
+	The NOAA post event imagery for storm events is typically large, both in terms of the number of individual image files and the size of each file. For example, Hurricane Florence (2018) has over 29,000 JPEG images, with an average size of 7.7 Mb. Extracting information from this library of synoptic imagery requires obtaining and processing these images. NOAA ERI is currently available through WTM services, or a GUI interface directing users to the relevant tar and zip files (NOAA ERI). To enable efficiently obtaining these images for use in a reproducible computational workflow we developed PSI Collect, a python module for downloading the NOAA ERI images via a command line interface. 
+	The key functionality of PSI collect is it allows users to download specific tar and zip files based on storm name, date of image acquisition, image type (JPEG, TIFF). The module also functions as a tool for managing a user’s library of images — users can quickly understand which storms they have downloaded. A cataloging tool is also supplied, which allows users to build CSV files that display key information for each image such as image name, acquisition data, file size, and latitude and longitude for each corner of image (extracted from the associated `.geom` file). This catalog can be used for statistical and spatial analysis. 
+  
 # Statement of Need
 
 # Comparsion to Previous Work
