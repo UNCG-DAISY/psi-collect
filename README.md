@@ -37,19 +37,19 @@ https://psi-collect.readthedocs.io/en/latest/)
 ### Code of Conduct
 
 We hope to foster an inclusive and respectful environment surrounding the contribution and discussion of our project.
-Make sure you understand our [**Code of Conduct**](https://post-storm-imagery.readthedocs.io/en/latest/code_of_conduct/).
+Make sure you understand our [**Code of Conduct**](https://psi-collect.readthedocs.io/en/latest/code_of_conduct/).
 
 ### Code Conventions
 
 Before committing to the repository **please** read the project
-[**Code Conventions**](https://post-storm-imagery.readthedocs.io/en/latest/contributing/).
+[**Code Conventions**](https://psi-collect.readthedocs.io/en/latest/contributing/).
 
 ### Project Pre-Requisites
 
 1. Python 3.6, 3.7, or 3.8 [**(Download Here)**](https://www.python.org/downloads/)
 2. Pipenv **(Run `pip install pipenv`)**
 3. You will need to add the folder containing the `psic` module (`src/python` by default) to your `PYTHONPATH`
-   (See [**Configuring Module**](https://post-storm-imagery.readthedocs.io/en/latest/configure_python_path/))
+   (See [**Configuring Module**](https://psi-collect.readthedocs.io/en/latest/configure_python_path/))
 
 *If you get an error message that looks something like `Module not found: "psic"`,
 then the `PYTHONPATH` is not configured correctly!*
@@ -66,7 +66,7 @@ then the `PYTHONPATH` is not configured correctly!*
 1. Change current directory to the collector module (`cd collector/`)
 2. Either use `pipenv run collect.py <args>` or `pipenv shell` then `collect.py <args>`
 
-*The arguments for `collect.py` are listed [**here**](https://post-storm-imagery.readthedocs.io/en/latest/collector/)*
+*The arguments for `collect.py` are listed [**here**](https://psi-collect.readthedocs.io/en/latest/collector/)*
 
 
 ## Data Source 💾
