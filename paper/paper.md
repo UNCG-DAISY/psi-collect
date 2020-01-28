@@ -45,7 +45,7 @@ The key functionality of `psi-collect` is it allows users to download specific t
   
 # Statement of Need
 
-`psi-collect` enables scientists to download NOAA response imagery via python in a variety of ways (via date, storm), and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` will be used to develop reproducible computational workflows to analyze post event imagery, e.g., automated classification and/or analysis of impacts from specific storms. For example images can be used to: assess damage to the built environment  (XXX), assess impact using the Sallenger (2000) Storm Impact Scale (e.g., Goldstein et al., 2020), measure the morphology of storm deposits (e.g., Lazarus, 2016), and study how human development controls the shape of sediment and debris deposits (e.g., Rogers et al., 2015).
+`psi-collect` enables scientists to download NOAA response imagery via python in a variety of ways (via date, storm), and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` will be used to develop reproducible computational workflows to analyze post event imagery, e.g., automated classification and/or analysis of impacts from specific storms. For example images can be used to: assess damage to the built environment (e.g., Thomas et al., 2014), assess impact using the Sallenger (2000) Storm Impact Scale (e.g., Goldstein et al., 2020), measure the morphology of storm deposits (e.g., Lazarus, 2016), and study how human development controls the shape of sediment and debris deposits (e.g., Rogers et al., 2015).
 
 # Acknowledgements
 
