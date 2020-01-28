@@ -1,5 +1,5 @@
 site_name: 'psi-collect'
-site_description: 'Collection, aggregation, and cataloging of storm imagery for the purpose of data sciences and analysis.'
+site_description: 'Collection, aggregation, and cataloging of post-storm imagery.'
 site_author: 'PSI Team'
 site_url: 'https://psi-collect.readthedocs.io/en/latest/'
 
