@@ -37,19 +37,43 @@ bibliography: paper.bib
 
 # Summary
  
-Major storms along the coastline often leave deposits of sediment and debris. In developed settings, these deposits require significant clean-up, but this clean-up erases their signature and therefore precludes their study. Synoptic post-event aerial imagery is often the only curated record of these impacts. In the US, a key source for this imagery is the Emergency Response Imagery collected by the the National Geodetic Survey (NGS) and Remote Sensing Division of the US National Oceanographic and Atmospheric Administration `[@NOAA:2020]`. This imagery is often flown before significant clean up occurs, and allows for critical insight into storm impacts along developed and undeveloped coastlines. 
+Major storms along the coastline often leave deposits of sediment and debris. In developed settings, these deposits
+require significant clean-up, but this clean-up erases their signature and therefore precludes their study. Synoptic
+post-event aerial imagery is often the only curated record of these impacts. In the US, a key source for this imagery is
+the Emergency Response Imagery collected by the the National Geodetic Survey (NGS) and Remote Sensing Division of the US
+National Oceanographic and Atmospheric Administration `[@NOAA:2020]`. This imagery is often flown before significant
+clean up occurs, and allows for critical insight into storm impacts along developed and undeveloped coastlines. 
 
-The NOAA post event imagery for storm events is typically large, both in terms of the number of individual image files and the size of each file. For example, Hurricane Florence (2018) has over 29,000 JPEG images, with an average size of 7.7 Mb. Extracting information from this library of synoptic imagery requires obtaining and processing these images. NOAA ERI is currently available through WTM services, or a GUI interface directing users to the relevant tar and zip files (NOAA ERI). To enable efficiently obtaining these images for use in a reproducible computational workflow we developed `psi-collect`, a python module for downloading the NOAA ERI images via a command line interface. 
+The NOAA post event imagery for storm events is typically large, both in terms of the number of individual image files
+and the size of each file. For example, Hurricane Florence (2018) has over 29,000 JPEG images, with an average size of
+7.7 Mb. Extracting information from this library of synoptic imagery requires obtaining and processing these images.
+NOAA ERI is currently available through WTM services, or a GUI interface directing users to the relevant tar and zip
+files (NOAA ERI). To enable efficiently obtaining these images for use in a reproducible computational workflow we
+developed `psi-collect`, a python module for downloading the NOAA ERI images via a command line interface. 
 
-The key functionality of `psi-collect` is it allows users to download specific tar and zip files based on storm name, date of image acquisition, image type (JPEG, TIFF). The module also functions as a tool for managing a user’s library of images — users can quickly understand which storms they have downloaded. A cataloging tool is also supplied, which allows users to build CSV files that display key information for each image such as image name, acquisition data, file size, and latitude and longitude for each corner of image (extracted from the associated `.geom` file). This catalog can be used for statistical and spatial analysis. 
+The key functionality of `psi-collect` is it allows users to download specific tar and zip files based on storm name,
+date of image acquisition, image type (JPEG, TIFF). The module also functions as a tool for managing a user’s library
+of images — users can quickly understand which storms they have downloaded. A cataloging tool is also supplied, which
+allows users to build CSV files that display key information for each image such as image name, acquisition data, file
+size, and latitude and longitude for each corner of image (extracted from the associated `.geom` file). This catalog
+can be used for statistical and spatial analysis. 
   
 # Statement of Need
 
-`psi-collect` enables scientists to download NOAA response imagery via python in a variety of ways (via date, storm), and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` will be used to develop reproducible computational workflows to analyze post event imagery, e.g., automated classification and/or analysis of impacts from specific storms. For example images can be used to: assess damage to the built environment `[@Thomas:2014]`, assess impact using the `@Sallenger:2000` Storm Impact Scale `[@Goldstein:2020]`, measure the morphology of storm deposits `[@Lazarus:2016]`, and study how human development controls the shape of sediment and debris deposits `[@Rogers:2015]`.
+`psi-collect` enables scientists to download NOAA response imagery via python in a variety of ways (via date, storm),
+and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` will be used to
+develop reproducible computational workflows to analyze post event imagery, e.g., automated classification and/or
+analysis of impacts from specific storms. For example images can be used to: assess damage to the built environment
+`[@Thomas:2014]`, assess impact using the `@Sallenger:2000` Storm Impact Scale `[@Goldstein:2020]`, measure the
+morphology of storm deposits `[@Lazarus:2016]`, and study how human development controls the shape of sediment and
+debris deposits `[@Rogers:2015]`.
 
 # Acknowledgements
 
-EBG acknowledges funding from NSF (Award #1939954), The Leverhulme Trust (RPG-2018-282), and an Early-Career Research Fellowship from the Gulf Research Program of the National Academies of Sciences, Engineering, and Medicine. The content is solely the responsibility of the authors and does not necessarily represent the official views of the Gulf Research Program of the National Academies of Sciences, Engineering, and Medicine.
+EBG acknowledges funding from NSF (Award #1939954), The Leverhulme Trust (RPG-2018-282), and an Early-Career Research
+Fellowship from the Gulf Research Program of the National Academies of Sciences, Engineering, and Medicine. The content
+is solely the responsibility of the authors and does not necessarily represent the official views of the Gulf Research
+Program of the National Academies of Sciences, Engineering, and Medicine.
 
 
 # References
