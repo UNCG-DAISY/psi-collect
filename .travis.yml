@@ -45,8 +45,15 @@ matrix:
 #before_deploy:
 #- pip install bump2version
 #- bump2version patch --allow-dirty --list --new-version '{$(git describe)}' --no-commit --tag-name '{$(git describe)}'
-deploy:
-  provider: pypi
-  user: "__token__"
-  password: $PYPI_TOKEN
-  skip_existing: true
+  deploy:
+    - provider: pypi
+      user: "__token__"
+      password: $PYPI_TOKEN
+      skip_existing: true
+
+    - provider: pages
+      skip_cleanup: true
+      github_token: $GITHUB_TOKEN
+      keep_history: true
+      on:
+        branch: master
