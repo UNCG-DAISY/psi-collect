@@ -58,7 +58,7 @@ then the `PYTHONPATH` is not configured correctly!*
 
 ### Installing Dependencies for Development
 
-1. Change current directory (`cd`) to `Poststorm_Imagery/` (the project root)
+1. Change current directory (`cd`) to `psi-collect/` (the project root)
 2. Run `pipenv install` to install dependencies
 
 ### Testing the Collect Script
