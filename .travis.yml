@@ -45,6 +45,10 @@ matrix:
 #before_deploy:
 #- pip install bump2version
 #- bump2version patch --allow-dirty --list --new-version '{$(git describe)}' --no-commit --tag-name '{$(git describe)}'
+  before_deploy:
+  - pip install -r docs/requirements-docs.txt
+  - mkdocs build
+
   deploy:
     - provider: pypi
       user: "__token__"
