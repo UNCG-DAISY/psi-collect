@@ -7,7 +7,7 @@ repo_url: 'https://github.com/UNCG-DAISY/psi-collect/'
 edit_uri: 'edit/master/docs/'
 
 nav:
-    - Home: README.md
+    - Home: index.md
     - Code of Conduct: code_of_conduct.md
     - Code Conventions: contributing.md
     - Configuring Module: configure_python_path.md

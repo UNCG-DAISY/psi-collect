@@ -6,15 +6,15 @@ https://pypi.org/project/psi-collect)
 https://travis-ci.org/UNCG-DAISY/psi-collect)
 [![Codecov](https://img.shields.io/codecov/c/gh/UNCG-DAISY/psi-collect)](
 https://codecov.io/gh/UNCG-DAISY/psi-collect)
-[![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
-https://psi-collect.readthedocs.io/en/latest/)
+<!-- [![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
+https://psi-collect.readthedocs.io/en/latest/) -->
 [![Last Commit](https://img.shields.io/github/last-commit/UNCG-DAISY/psi-collect)](
 https://github.com/UNCG-DAISY/psi-collect/commits/master)
 
 Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
 
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
-https://psi-collect.readthedocs.io/en/latest/)
+https://uncg-daisy.github.io/psi-collect)
 
 ## Team Members
 
