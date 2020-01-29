@@ -52,10 +52,10 @@ files (NOAA ERI). To enable efficiently obtaining these images for use in a repr
 developed `psi-collect`, a python module for downloading the NOAA ERI images via a command line interface. 
 
 The key functionality of `psi-collect` is it allows users to download specific tar and zip files based on storm name,
-date of image acquisition (day, month, and/or year), image type (JPEG, TIFF). Using regular expressions, any subset of
-images can be selected or filtered for to download reliably. Images are downloaded in full with automatic resumption of
-downloads in the event that a download is either interrupted or aborted prematurely. Each archive is also checked for
-integrity of contents upon download completion in order to ensure that data is accurate and in-tact as provided by NOAA.
+date of image acquisition (day, month, and/or year), image type (JPEG, TIFF). Users can also filter and select specific 
+files using regular expressions. The module includes an automatic resumption feature in the event that a download 
+is interrupted. Each tar and zip archive is checked for integrity of contents upon download completion to ensure that 
+data is accurate and intact.
 
 The module also functions as a tool for managing a user’s library of images — users can quickly understand which storms
 they have downloaded. A cataloging tool is also supplied, which allows users to build CSV files that display key
