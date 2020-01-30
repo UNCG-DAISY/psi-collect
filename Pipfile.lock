@@ -179,11 +179,11 @@
         },
         "bump2version": {
             "hashes": [
-                "sha256:524bde030318fe2543038defe0f77739605636fef96924883813cb290cf79c1e",
-                "sha256:bfcc051498dda9fd9ac8634689f4516e1c20fdeeace3278932cc6e1248418b36"
+                "sha256:477f0e18a0d58e50bb3dbc9af7fcda464fd0ebfc7a6151d8888602d7153171a0",
+                "sha256:cd4f3a231305e405ed8944d8ff35bd742d9bc740ad62f483bd0ca21ce7131984"
             ],
             "index": "pypi",
-            "version": "==0.5.11"
+            "version": "==1.0.0"
         },
         "certifi": {
             "hashes": [
