@@ -68,7 +68,7 @@ of image (extracted from the associated `.geom` file). This catalog can be used 
 and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` will be used to
 develop reproducible computational workflows to analyze post event imagery, e.g., automated classification and/or
 analysis of impacts from specific storms. For example images can be used to: assess damage to the built environment
-`[@Thomas:2014]`, assess impact using the `@Sallenger:2000` Storm Impact Scale `[@Goldstein:2020]`, measure the
+`[@Thomas:2013]`, assess impact using the `@Sallenger:2000` Storm Impact Scale `[@Goldstein:2020]`, measure the
 morphology of storm deposits `[@Lazarus:2016]`, and study how human development controls the shape of sediment and
 debris deposits `[@Rogers:2015]`.
 
