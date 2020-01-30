@@ -31,7 +31,8 @@ affiliations:
    index: 1
  - name: Department of Geography, Environment, and Sustainability, The University of North Carolina at Greensboro
    index: 2
-date: <day> <month> <year>
+
+date: 1 February 2020
 bibliography: paper.bib
 ---
 
@@ -41,7 +42,7 @@ Major storms along the coastline often leave deposits of sediment and debris. In
 require significant clean-up, but this clean-up erases their signature and therefore precludes their study. Synoptic
 post-event aerial imagery is often the only curated record of these impacts. In the US, a key source for this imagery is
 the Emergency Response Imagery collected by the the National Geodetic Survey (NGS) and Remote Sensing Division of the US
-National Oceanographic and Atmospheric Administration `[@NOAA:2020]`. This imagery is often flown before significant
+National Oceanographic and Atmospheric Administration [@NOAA2020]. This imagery is often flown before significant
 clean up occurs, and allows for critical insight into storm impacts along developed and undeveloped coastlines. 
 
 The NOAA post event imagery for storm events is typically large, both in terms of the number of individual image files
@@ -68,9 +69,9 @@ of image (extracted from the associated `.geom` file). This catalog can be used 
 and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` will be used to
 develop reproducible computational workflows to analyze post event imagery, e.g., automated classification and/or
 analysis of impacts from specific storms. For example images can be used to: assess damage to the built environment
-`[@Thomas:2013]`, assess impact using the `@Sallenger:2000` Storm Impact Scale `[@Goldstein:2020]`, measure the
-morphology of storm deposits `[@Lazarus:2016]`, and study how human development controls the shape of sediment and
-debris deposits `[@Rogers:2015]`.
+[e.g., @Thomas2013], assess impact using the @Sallenger2000 Storm Impact Scale [e.g., @Goldstein2020], measure the
+morphology of storm deposits [e.g., @Lazarus2016], and study how human development controls the shape of sediment and
+debris deposits [e.g., @Rogers2015].
 
 # Acknowledgements
 
