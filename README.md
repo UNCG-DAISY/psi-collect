@@ -14,7 +14,7 @@ https://github.com/UNCG-DAISY/psi-collect/commits/master)
 Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
 
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
-https://uncg-daisy.github.io/psi-collect)
+https://psi-collect.readthedocs.io/en/latest/)
 
 ## Team Members
 
