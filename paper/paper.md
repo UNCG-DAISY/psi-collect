@@ -47,8 +47,8 @@ storm impacts along developed and undeveloped coastlines [Madore2018].
 Post-event imagery is typically large, both in terms of the number of individual image files and the size of each file. For 
 example, Hurricane Florence (2018) has over 29,000 JPEG images, with an average size of 7.7 Mb. The first steps for extracting 
 information from this data requires acquiring and processing images. NOAA ERI is currently available as a Web Map 
-Tile Service or via download using GUI interface (directing users to the relevant tar and zip files). To enable users to
-download NOAA ERI images via command line for use in reproducible computational workflows, we developed a Python 
+Tile Service or via download using a graphical user interface (directing users to the relevant tar and zip files). To enable 
+users to download NOAA ERI images via command line for use in reproducible computational workflows, we developed a Python 
 module (`psi-collect`). 
 
 The key functionality of `psi-collect` is it allows users to download specific tar and ZIP archives based on storm name,
