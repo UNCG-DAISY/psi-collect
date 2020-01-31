@@ -38,24 +38,23 @@ bibliography: paper.bib
 
 # Summary
  
-Major storms along the coastline often leave deposits of sediment and debris. In developed settings, these deposits
-require significant clean-up, but this clean-up erases their signature and therefore precludes their study. Synoptic
-post-event aerial imagery is often the only curated record of these impacts. In the US, a key source for this imagery is
-the Emergency Response Imagery collected by the the National Geodetic Survey (NGS) and Remote Sensing Division of the US
-National Oceanographic and Atmospheric Administration [@NOAA2020]. This imagery is often flown before significant
-clean up occurs, and allows for critical insight into storm impacts along developed and undeveloped coastlines. 
+Major storms along the coastline can damage infrastructure and leave deposits of sediment and debris. Synoptic aerial imagery
+is often used to assess damage and impacts from storm events. A key source for this imagery in the US is the Emergency
+Response Imagery (ERI) collected by the the National Geodetic Survey (NGS) Remote Sensing Division of the US National 
+Oceanographic and Atmospheric Administration [@NOAA2020]. This imagery aids in recovery efforts as well as rapid assessment of 
+storm impacts along developed and undeveloped coastlines [Madore2018]. 
 
-The NOAA post event imagery for storm events is typically large, both in terms of the number of individual image files
-and the size of each file. For example, Hurricane Florence (2018) has over 29,000 JPEG images, with an average size of
-7.7 Mb. Extracting information from this library of synoptic imagery requires obtaining and processing these images.
-NOAA ERI is currently available through WTM services, or a GUI interface directing users to the relevant tar and zip
-files (NOAA ERI). To enable efficiently obtaining these images for use in a reproducible computational workflow we
-developed `psi-collect`, a python module for downloading the NOAA ERI images via a command line interface. 
+Post-event imagery is typically large, both in terms of the number of individual image files and the size of each file. For 
+example, Hurricane Florence (2018) has over 29,000 JPEG images, with an average size of 7.7 Mb. The first steps for extracting 
+information from this data requires acquiring and processing images. NOAA ERI is currently available as a Web Map 
+Tile Service or via download using GUI interface (directing users to the relevant tar and zip files). To enable users to
+download NOAA ERI images via command line for use in reproducible computational workflows, we developed a Python 
+module (`psi-collect`). 
 
-The key functionality of `psi-collect` is it allows users to download specific tar and zip files based on storm name,
+The key functionality of `psi-collect` is it allows users to download specific tar and ZIP archives based on storm name,
 date of image acquisition (day, month, and/or year), image type (JPEG, TIFF). Users can also filter and select specific 
 files using regular expressions. The module includes an automatic resumption feature in the event that a download 
-is interrupted. Each tar and zip archive is checked for integrity of contents upon download completion to ensure that 
+is interrupted. Each tar and ZIP archive is checked for integrity of contents upon download completion to ensure that 
 data is accurate and intact.
 
 The module also functions as a tool for managing a user’s library of images — users can quickly understand which storms
@@ -65,13 +64,10 @@ of image (extracted from the associated `.geom` file). This catalog can be used 
   
 # Statement of Need
 
-`psi-collect` enables scientists to download NOAA response imagery via python in a variety of ways (via date, storm),
-and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` will be used to
-develop reproducible computational workflows to analyze post event imagery, e.g., automated classification and/or
-analysis of impacts from specific storms. For example images can be used to: assess damage to the built environment
-[e.g., @Thomas2013], assess impact using the @Sallenger2000 Storm Impact Scale [e.g., @Goldstein2020], measure the
-morphology of storm deposits [e.g., @Lazarus2016], and study how human development controls the shape of sediment and
-debris deposits [e.g., @Rogers2015].
+`psi-collect` enables scientists to download NOAA Emergency Response Imagery via Python in a variety of ways (via date, 
+storm),and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` could be 
+used to develop reproducible computational workflows to analyze post-event imagery. For example, images can be used to: assess damage to the built environment [e.g., @Thomas2014], measure impact using the @Sallenger2000 Storm Impact Scale [e.g., 
+@Liu2014, @Goldstein2020], evaluate forecasts of storm impact [@Morgan2019], measure the morphology of storm deposits [e.g., @Overbeck2015, @Lazarus2016], and study how human development controls the shape of sediment and debris deposits [e.g., @Rogers2015].
 
 # Acknowledgements
 
