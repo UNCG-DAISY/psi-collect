@@ -67,7 +67,7 @@ of image (extracted from the associated `.geom` file). This catalog can be used 
 `psi-collect` enables scientists to download NOAA Emergency Response Imagery via Python in a variety of ways (via date, 
 storm),and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` could be 
 used to develop reproducible computational workflows to analyze post-event imagery. For example, images can be used to: assess damage to the built environment [e.g., @Thomas2014], measure impact using the @Sallenger2000 Storm Impact Scale [e.g., 
-@Liu2014, @Goldstein2020], evaluate forecasts of storm impact [@Morgan2019], measure the morphology of storm deposits [e.g., @Overbeck2015, @Lazarus2016], and study how human development controls the shape of sediment and debris deposits [e.g., @Rogers2015].
+@Liu2014; @Goldstein2020], evaluate forecasts of storm impact [@Morgan2019], measure the morphology of storm deposits [e.g., @Overbeck2015; @Lazarus2016], and study how human development controls the shape of sediment and debris deposits [e.g., @Rogers2015].
 
 # Acknowledgements
 
