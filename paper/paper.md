@@ -42,7 +42,7 @@ Major storms along the coastline can damage infrastructure and leave deposits of
 is often used to assess damage and impacts from storm events. A key source for this imagery in the US is the Emergency
 Response Imagery (ERI) collected by the the National Geodetic Survey (NGS) Remote Sensing Division of the US National 
 Oceanographic and Atmospheric Administration [@NOAA2020]. This imagery aids in recovery efforts as well as rapid assessment of 
-storm impacts along developed and undeveloped coastlines [Madore2018]. 
+storm impacts along developed and undeveloped coastlines [@Madore2018]. 
 
 Post-event imagery is typically large, both in terms of the number of individual image files and the size of each file. For 
 example, Hurricane Florence (2018) has over 29,000 JPEG images, with an average size of 7.7 Mb. The first steps for extracting 
