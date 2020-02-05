@@ -67,6 +67,7 @@ then the `PYTHONPATH` is not configured correctly!*
 1. Change current directory to the collector module (`cd collector/`)
 2. Either use `pipenv run collect.py <args>` or `pipenv shell` then `collect.py <args>`
 
+
 *The arguments for `collect.py` are listed [**here**](https://psi-collect.readthedocs.io/en/latest/collector/)*
 
 
