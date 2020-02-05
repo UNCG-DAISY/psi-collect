@@ -16,7 +16,7 @@ setup(
     author='PSI Team',
     description='Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'Intended Audience :: Education',
