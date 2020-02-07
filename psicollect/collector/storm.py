@@ -100,11 +100,11 @@ class Storm:
                 file_sizes = executor.map(get_full_content_length,
                                           [x[0] for x in url_list])
 
-            url_size_list: List[Tuple[str,str,int]] = list()
-            url_size_list = [(x[0], x[1], size) for x,size in zip(url_list, file_sizes)]
+            url_size_list: List[Tuple[str, str, int]] = list()
+            url_size_list = [(x[0], x[1], size) for x, size in zip(url_list, file_sizes)]
 
             # Find all storm data by regex parsing of URLs
-            for archive_url, archive_type,file_size in url_size_list:
+            for archive_url, archive_type, file_size in url_size_list:
 
                 if re.search(search_re, archive_url) is not None:
 
