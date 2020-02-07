@@ -15,7 +15,7 @@ https://github.com/UNCG-DAISY/psi-collect/commits/master)
 [![status](https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813/status.svg)](
 https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813)
 
-## Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
+Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
 
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
 https://psi-collect.readthedocs.io/en/latest/)
