@@ -7,6 +7,8 @@ https://travis-ci.org/UNCG-DAISY/psi-collect)
 [![Codecov](https://img.shields.io/codecov/c/gh/UNCG-DAISY/psi-collect)](
 https://codecov.io/gh/UNCG-DAISY/psi-collect)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=UNCG-DAISY/psi-collect)](https://dependabot.com)
+[![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
+https://psi-collect.readthedocs.io/en/latest/)
 [![Last Commit](https://img.shields.io/github/last-commit/UNCG-DAISY/psi-collect)](
 https://github.com/UNCG-DAISY/psi-collect/commits/master)
 [![status](https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813/status.svg)](https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813)
