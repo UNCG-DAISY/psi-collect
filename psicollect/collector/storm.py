@@ -2,6 +2,8 @@ import re
 from os import path
 from typing import List, Tuple
 
+import concurrent.futures
+
 from psicollect.collector.archive import Archive
 from psicollect.collector.connection_handler import get_http_response
 # Matches archive files for most (if not all) formats
@@ -93,8 +95,16 @@ class Storm:
                     if get_full_content_length(new_url) != 0:
                         url_list.append((new_url, archive_type))
 
+            # Get file sizes concurrently (faster performance!) and add to the url list
+            with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+                file_sizes = executor.map(get_full_content_length,
+                                          [x[0] for x in url_list])
+
+            url_size_list: List[Tuple[str,str,int]] = list()
+            url_size_list = [(x[0], x[1], size) for x,size in zip(url_list, file_sizes)]
+
             # Find all storm data by regex parsing of URLs
-            for archive_url, archive_type in url_list:
+            for archive_url, archive_type,file_size in url_size_list:
 
                 if re.search(search_re, archive_url) is not None:
 
@@ -109,7 +119,8 @@ class Storm:
                             break
 
                     if flag_exists is False:
-                        self.archive_list.append(Archive(archive_url=archive_url))
+                        self.archive_list.append(Archive(archive_url=archive_url,
+                                                         file_size_origin=file_size))
 
         except ConnectionError:  # pragma: no cover
             self.archive_list = list()
