@@ -59,12 +59,14 @@ then the `PYTHONPATH` is not configured correctly!*
 ### Installing Dependencies for Development
 
 1. Change current directory (`cd`) to `psi-collect/` (the project root)
-2. Run `pipenv install` to install dependencies
+2. Run `pipenv install --dev` to install dependencies
+3. Run `pre-commit install` to install style checking when committing
 
 ### Testing the Collect Script
 
 1. Change current directory to the collector module (`cd collector/`)
 2. Either use `pipenv run collect.py <args>` or `pipenv shell` then `collect.py <args>`
+3. In addition tests can be run using `pytest` from the project root directory
 
 
 *The arguments for `collect.py` are listed [**here**](https://psi-collect.readthedocs.io/en/latest/collector/)*
