@@ -205,10 +205,10 @@ class Archive:
 
         :return: The size of the archive file in bytes
         """
-        if self.file_origin_size is not None:
-            return self.file_origin_size
+        if self.file_origin_size is None:
+            self.file_origin_size = get_full_content_length(self.url)
 
-        return get_full_content_length(self.url)
+        return self.file_origin_size
 
     @staticmethod
     def verify_integrity(archive_file_path: Union[bytes, str]) -> bool:
