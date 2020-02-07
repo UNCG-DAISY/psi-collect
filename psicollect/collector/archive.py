@@ -38,7 +38,8 @@ class Archive:
     # Save a cache of the file size in bytes
     file_origin_size: int or None = None
 
-    def __init__(self, archive_url: str, archive_date: str = UNKNOWN, archive_label: str = UNKNOWN):
+    def __init__(self, archive_url: str, archive_date: str = UNKNOWN, archive_label: str = UNKNOWN,
+                 file_size_origin: int = None):
         """Initializes the object with required information for a archive file
 
         :param archive_url: The url to download the archive file
@@ -48,6 +49,7 @@ class Archive:
         self.date = archive_date
         self.url = archive_url
         self.type_label = archive_label
+        self.file_origin_size = file_size_origin
 
         # Parse out needed information from the URL
         self.name, self.type = re.findall(re.compile('.*/([^/]+)\\.(tar|zip)', re.IGNORECASE), self.url)[0]
@@ -205,10 +207,10 @@ class Archive:
 
         :return: The size of the archive file in bytes
         """
-        if self.file_origin_size is not None:
-            return self.file_origin_size
+        if self.file_origin_size is None:
+            self.file_origin_size = get_full_content_length(self.url)
 
-        return get_full_content_length(self.url)
+        return self.file_origin_size
 
     @staticmethod
     def verify_integrity(archive_file_path: Union[bytes, str]) -> bool:
