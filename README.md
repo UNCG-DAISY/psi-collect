@@ -17,7 +17,7 @@ https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813)
 
 Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
 
-This package helps geoscientists, civil/environmental engineers and government emergency planners download, analyse and store aerial imagery of significant historical hurricane events across USA.
+This package helps users (researchers, managers, etc.) download, analyze, and store aerial imagery taken after hurricane events that have impacted the USA.
 
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
 https://psi-collect.readthedocs.io/en/master/)
