@@ -9,12 +9,13 @@ spacial analysis.
 
 ## Command-Line Quick Reference
 
-|            Parameter | Argument(s)    | Function                                                                                     | Default Value       |
-| -------------------: | -------------- | -------------------------------------------------------------------------------------------- | ------------------- |
-|  `--extension`, `-e` | *<extension\>* | Only add files with this extension to the catalog                                            | `jpg`               |
-|     `--fields`, `-e` | *<Set\>*       | Only include these fields from the .geom and system values                                   | *(See Note)*        |
-|      `--debug`, `-d` |                | Include parameter to output debug information to console                                     | *False*             |
-|  `--verbosity`, `-v` | *<level\>*     | The amount of information to log to console (0 = only errors, 1 = low, 2 = medium, 3 = high) | `1`                 |
+|            Parameter | Argument(s)    | Function                                                                                     | Default Value         |
+| -------------------: | -------------- | -------------------------------------------------------------------------------------------- | --------------------- |
+|      `--path`, `-p`  | *<path\>*      | The path to start archiving from (e.g. a specific storm's folder for storm specific catalog) | `<current directory>` |
+|  `--extension`, `-e` | *<extension\>* | Only add files with this extension to the catalog                                            | `jpg`                 |
+|     `--fields`, `-e` | *<Set\>*       | Only include these fields from the .geom and system values                                   | *(See Note)*          |
+|      `--debug`, `-d` |                | Include parameter to output debug information to console                                     | *False*               |
+|  `--verbosity`, `-v` | *<level\>*     | The amount of information to log to console (0 = only errors, 1 = low, 2 = medium, 3 = high) | `1`                   |
 
 !!! note "Modifying Catalog Contents"
             Any field within the `.geom` file of all images can be added to the catalog by simply changing the `--fields` flag.

@@ -13,6 +13,10 @@ from psicollect.common import s, h
 
 parser = argparse.ArgumentParser(prog=(s.ROOT_CMD + ' catalog'))
 
+parser.add_argument('--path', '-p', default=getcwd(),
+                    help='The path on your system to start the archival process from (Defaults to the current '
+                         'working directory).')
+
 parser.add_argument('--extension', '-e', default='jpg',
                     help='The file extension to restrict the search to (Default: %(default)s).')
 
@@ -37,7 +41,7 @@ parser.add_argument('--verbosity', '-v', type=int, default=s.DEFAULT_VERBOSITY,
 OPTIONS: argparse.Namespace = parser.parse_args()
 
 try:
-    Cataloging.generate_index_from_scope(scope_path=getcwd(),
+    Cataloging.generate_index_from_scope(scope_path=OPTIONS.path,
                                          file_extension=OPTIONS.extension,
                                          fields_needed=OPTIONS.fields,
                                          debug=OPTIONS.debug,

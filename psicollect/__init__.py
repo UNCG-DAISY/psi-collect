@@ -4,4 +4,4 @@
 
 __name__ = 'psicollect'
 __author__ = 'PSI'
-__version__ = '1.0.0'
+__version__ = '1.0.1'
