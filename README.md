@@ -13,6 +13,8 @@ https://github.com/UNCG-DAISY/psi-collect/commits/master)
 
 ## Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
 
+This package helps geoscientists, civil/environmental engineers and government emergency planners download, analyse and store aerial imagery of significant historical hurricane events across USA.
+
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
 https://psi-collect.readthedocs.io/en/latest/)
 
