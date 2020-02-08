@@ -1,7 +1,7 @@
 site_name: 'psi-collect'
 site_description: 'Collection, aggregation, and cataloging of post-storm imagery.'
 site_author: 'PSI Team'
-site_url: 'https://psi-collect.readthedocs.io/en/latest/'
+site_url: 'https://psi-collect.readthedocs.io/en/master/'
 
 repo_url: 'https://github.com/UNCG-DAISY/psi-collect/'
 edit_uri: 'edit/master/docs/'

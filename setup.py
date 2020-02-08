@@ -5,7 +5,7 @@
 from setuptools import setup, find_packages
 
 REPO_URL = 'https://github.com/UNCG-DAISY/psi-collect/'
-DOCS_URL = 'https://psi-collect.readthedocs.io/en/latest/'
+DOCS_URL = 'https://psi-collect.readthedocs.io/en/master/'
 
 with open('README.md', 'r', encoding='utf8') as fh:
     long_description = fh.read()
