@@ -6,5 +6,6 @@
 
 ## v1.0.1
 
-- Collection performance improvements (#68) 
-- Fix issue with catalogs not being created for TIF archive (#76) - Fixes Issue #74
+- Collection performance improvements
+- Fix issue with catalogs not being created for TIF archive (Fixes #74)
+- Make selecting a path for cataloging clearer
