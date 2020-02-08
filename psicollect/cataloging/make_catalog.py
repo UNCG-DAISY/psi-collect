@@ -422,7 +422,7 @@ class Cataloging:
 
         path_head, path_tail = os.path.split(scope_path)
 
-        if path_head == os.path.splitdrive(scope_path)[1] and path_tail == '':
+        if path_tail == '':
             # If the filesystem root directory is reached, a storm-specific catalog cannot be found
 
             raise PathParsingException(objective='the archive name')
