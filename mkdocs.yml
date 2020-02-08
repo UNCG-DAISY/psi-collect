@@ -13,6 +13,7 @@ nav:
     - Configuring Module: configure_python_path.md
     - Data Collection: collector.md
     - Cataloging Images: cataloging.md
+    - Distribution & PyPI: distributing_pypi.md
 theme:
   name: 'material'
   custom_dir: 'theme'
