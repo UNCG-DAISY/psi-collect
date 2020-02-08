@@ -9,7 +9,7 @@ https://codecov.io/gh/UNCG-DAISY/psi-collect)
 [![Dependabot](https://api.dependabot.com/badges/status?host=github&repo=UNCG-DAISY/psi-collect)](
 https://dependabot.com)
 [![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
-https://psi-collect.readthedocs.io/en/latest/)
+https://psi-collect.readthedocs.io/en/master/)
 [![Last Commit](https://img.shields.io/github/last-commit/UNCG-DAISY/psi-collect)](
 https://github.com/UNCG-DAISY/psi-collect/commits/master)
 [![JOSS](https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813/status.svg)](
@@ -20,7 +20,7 @@ Collection, aggregation, and cataloging of NOAA post-storm emergency response im
 This package helps geoscientists, civil/environmental engineers and government emergency planners download, analyse and store aerial imagery of significant historical hurricane events across USA.
 
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
-https://psi-collect.readthedocs.io/en/latest/)
+https://psi-collect.readthedocs.io/en/master/)
 
 ## Team Members
 
@@ -43,19 +43,19 @@ https://psi-collect.readthedocs.io/en/latest/)
 ### Code of Conduct
 
 We hope to foster an inclusive and respectful environment surrounding the contribution and discussion of our project.
-Make sure you understand our [**Code of Conduct**](https://psi-collect.readthedocs.io/en/latest/code_of_conduct/).
+Make sure you understand our [**Code of Conduct**](https://psi-collect.readthedocs.io/en/master/code_of_conduct/).
 
 ### Code Conventions
 
 Before committing to the repository **please** read the project
-[**Code Conventions**](https://psi-collect.readthedocs.io/en/latest/contributing/).
+[**Code Conventions**](https://psi-collect.readthedocs.io/en/master/contributing/).
 
 ### Project Pre-Requisites
 
 1. Python 3.6, 3.7, or 3.8 [**(Download Here)**](https://www.python.org/downloads/)
 2. Pipenv **(Run `pip install pipenv`)**
 3. You will need to add the folder containing the `psic` module (`src/python` by default) to your `PYTHONPATH`
-   (See [**Configuring Module**](https://psi-collect.readthedocs.io/en/latest/configure_python_path/))
+   (See [**Configuring Module**](https://psi-collect.readthedocs.io/en/master/configure_python_path/))
 
 *If you get an error message that looks something like `Module not found: "psic"`,
 then the `PYTHONPATH` is not configured correctly!*
@@ -75,7 +75,7 @@ then the `PYTHONPATH` is not configured correctly!*
 3. In addition tests can be run using `pytest` from the project root directory
 
 
-*The arguments for `collect.py` are listed [**here**](https://psi-collect.readthedocs.io/en/latest/collector/)*
+*The arguments for `collect.py` are listed [**here**](https://psi-collect.readthedocs.io/en/master/collector/)*
 
 
 ## Data Source 💾
