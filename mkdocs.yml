@@ -9,11 +9,13 @@ edit_uri: 'edit/master/docs/'
 nav:
     - Home: index.md
     - Code of Conduct: code_of_conduct.md
-    - Code Conventions: contributing.md
-    - Configuring Module: configure_python_path.md
-    - Data Collection: collector.md
-    - Cataloging Images: cataloging.md
-    - Distribution & PyPI: distributing_pypi.md
+    - Usage:
+      - Data Collection: collector.md
+      - Cataloging Images: cataloging.md
+    - Development:
+      - Code Conventions: contributing.md
+      - Configuring Module: configure_python_path.md
+      - Distribution & PyPI: distributing_pypi.md
 theme:
   name: 'material'
   custom_dir: 'theme'
