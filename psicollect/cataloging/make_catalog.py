@@ -427,7 +427,7 @@ class Cataloging:
 
             raise PathParsingException(objective='the archive name')
 
-        if ('20' in path_tail and '_jpgs' in path_tail) is False or scope_path == s.DATA_PATH:
+        if ('20' in path_tail and '_' in path_tail) is False or scope_path == s.DATA_PATH:
             # If the current directory does not look like an archive name or is the data path
 
             # Keep recursively checking each directory to match the pattern (traverse back through path)
