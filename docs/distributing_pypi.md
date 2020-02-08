@@ -21,7 +21,7 @@
     the commit history as a guide: `https://github.com/UNCG-DAISY/psi-collect/compare/v<old version>...v<new version>`
    
 5.  Commit and push changes made by *bump2version*'s updates to the repo along with any other final changes you want to
-    include in the new version
+    include in the new version, making sure to push the new version tag (e.g. `git push --follow-tags`)
     
 6.  Make sure build checks pass either by `Travis-CI` or run `tox` (`pip3 install tox`) locally to be safe
     
