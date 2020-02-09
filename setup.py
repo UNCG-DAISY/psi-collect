@@ -46,7 +46,7 @@ setup(
     python_requires='>=3.6',
     entry_points={  # Executable scripts as command-line
         'console_scripts': [
-            'pstorm=psicollect.common.pstorm:main',
+            'pstorm=runners.pstorm:main',
         ],
     },
     url=REPO_URL,
