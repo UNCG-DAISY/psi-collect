@@ -5,14 +5,14 @@
 from setuptools import setup, find_packages
 
 REPO_URL = 'https://github.com/UNCG-DAISY/psi-collect/'
-DOCS_URL = 'https://psi-collect.readthedocs.io/en/latest/'
+DOCS_URL = 'https://psi-collect.readthedocs.io/en/master/'
 
 with open('README.md', 'r', encoding='utf8') as fh:
     long_description = fh.read()
 
 setup(
     name='psi-collect',
-    version='1.0.0',
+    version='1.0.1',
     author='PSI Team',
     description='Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.',
     classifiers=[

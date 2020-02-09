@@ -6,15 +6,21 @@ https://pypi.org/project/psi-collect)
 https://travis-ci.org/UNCG-DAISY/psi-collect)
 [![Codecov](https://img.shields.io/codecov/c/gh/UNCG-DAISY/psi-collect)](
 https://codecov.io/gh/UNCG-DAISY/psi-collect)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=UNCG-DAISY/psi-collect)](https://dependabot.com)
+[![Dependabot](https://api.dependabot.com/badges/status?host=github&repo=UNCG-DAISY/psi-collect)](
+https://dependabot.com)
+[![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
+https://psi-collect.readthedocs.io/en/master/)
 [![Last Commit](https://img.shields.io/github/last-commit/UNCG-DAISY/psi-collect)](
 https://github.com/UNCG-DAISY/psi-collect/commits/master)
-[![status](https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813/status.svg)](https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813)
+[![JOSS](https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813/status.svg)](
+https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813)
 
-## Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
+Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
+
+This package helps users (researchers, managers, etc.) download, analyze, and store aerial imagery taken after hurricane events that have impacted the USA.
 
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
-https://psi-collect.readthedocs.io/en/latest/)
+https://psi-collect.readthedocs.io/en/master/)
 
 ## Team Members
 
@@ -37,19 +43,19 @@ https://psi-collect.readthedocs.io/en/latest/)
 ### Code of Conduct
 
 We hope to foster an inclusive and respectful environment surrounding the contribution and discussion of our project.
-Make sure you understand our [**Code of Conduct**](https://psi-collect.readthedocs.io/en/latest/code_of_conduct/).
+Make sure you understand our [**Code of Conduct**](https://psi-collect.readthedocs.io/en/master/code_of_conduct/).
 
 ### Code Conventions
 
 Before committing to the repository **please** read the project
-[**Code Conventions**](https://psi-collect.readthedocs.io/en/latest/contributing/).
+[**Code Conventions**](https://psi-collect.readthedocs.io/en/master/contributing/).
 
 ### Project Pre-Requisites
 
 1. Python 3.6, 3.7, or 3.8 [**(Download Here)**](https://www.python.org/downloads/)
 2. Pipenv **(Run `pip install pipenv`)**
 3. You will need to add the folder containing the `psic` module (`src/python` by default) to your `PYTHONPATH`
-   (See [**Configuring Module**](https://psi-collect.readthedocs.io/en/latest/configure_python_path/))
+   (See [**Configuring Module**](https://psi-collect.readthedocs.io/en/master/configure_python_path/))
 
 *If you get an error message that looks something like `Module not found: "psic"`,
 then the `PYTHONPATH` is not configured correctly!*
@@ -59,15 +65,17 @@ then the `PYTHONPATH` is not configured correctly!*
 ### Installing Dependencies for Development
 
 1. Change current directory (`cd`) to `psi-collect/` (the project root)
-2. Run `pipenv install` to install dependencies
+2. Run `pipenv install --dev` to install dependencies
+3. Run `pre-commit install` to install style checking when committing
 
 ### Testing the Collect Script
 
 1. Change current directory to the collector module (`cd collector/`)
 2. Either use `pipenv run collect.py <args>` or `pipenv shell` then `collect.py <args>`
+3. In addition tests can be run using `pytest` from the project root directory
 
 
-*The arguments for `collect.py` are listed [**here**](https://psi-collect.readthedocs.io/en/latest/collector/)*
+*The arguments for `collect.py` are listed [**here**](https://psi-collect.readthedocs.io/en/master/collector/)*
 
 
 ## Data Source 💾

@@ -248,3 +248,6 @@ if OPTIONS.download:
                     time.sleep(10)
 
     print('\nDownloaded finished successfully!')
+    print('\nIf you would like to catalog all the archives pertaining to a specific storm, '
+          'please navigate to the appropriate storm\'s directory or use the \'--path\' parameter '
+          'with the cataloging command. See \"' + s.ROOT_CMD + ' catalog -h\" for help!')

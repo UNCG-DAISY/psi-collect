@@ -1,7 +1,7 @@
 site_name: 'psi-collect'
 site_description: 'Collection, aggregation, and cataloging of post-storm imagery.'
 site_author: 'PSI Team'
-site_url: 'https://psi-collect.readthedocs.io/en/latest/'
+site_url: 'https://psi-collect.readthedocs.io/en/master/'
 
 repo_url: 'https://github.com/UNCG-DAISY/psi-collect/'
 edit_uri: 'edit/master/docs/'
@@ -9,10 +9,13 @@ edit_uri: 'edit/master/docs/'
 nav:
     - Home: index.md
     - Code of Conduct: code_of_conduct.md
-    - Code Conventions: contributing.md
-    - Configuring Module: configure_python_path.md
-    - Data Collection: collector.md
-    - Cataloging Images: cataloging.md
+    - Usage:
+      - Data Collection: collector.md
+      - Cataloging Images: cataloging.md
+    - Development:
+      - Code Conventions: contributing.md
+      - Configuring Module: configure_python_path.md
+      - Distribution & PyPI: distributing_pypi.md
 theme:
   name: 'material'
   custom_dir: 'theme'
@@ -59,4 +62,4 @@ markdown_extensions:
     - pymdownx.tilde
 
 extra:
-    version: 1.0.0
+    version: 1.0.1
