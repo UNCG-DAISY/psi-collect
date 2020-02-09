@@ -1,15 +1,15 @@
 """A file that contains some commonly used values"""
-from os import path
+from os.path import join, expanduser
 
 ROOT_CMD: str = 'pstorm'
 DEFAULT_DEBUG: bool = False
 DEFAULT_VERBOSITY: int = 1
 FORMAT_TIME = '%B %d, %Y at %I:%M %p'
 
-PROJECT_DIR = path.expanduser('~/psi/collect')
+PROJECT_DIR = join(join(expanduser('~'), 'psi'), 'collect')
 
-DATA_PATH = path.join(PROJECT_DIR, 'data')
-ARCHIVE_CACHE_PATH = path.join(DATA_PATH, 'archives')
+DATA_PATH = join(PROJECT_DIR, 'data')
+ARCHIVE_CACHE_PATH = join(DATA_PATH, 'archives')
 
 LOCK_TOTAL_SIZE_BYTES_FIELD = 'total_size_bytes'
 LOCK_PART_SIZE_BYTES_FIELD = 'size_bytes'
@@ -27,7 +27,7 @@ URL_STORMS_REGEX_PATTERN_INDEX = '<a href=\"(.+/storms/([^/]+)/.*?index\\.html)\
 CATALOG_SCHEMA = 'v2'
 
 # The base directory to store all new catalog files and read from existing catalog files (schema dependent)
-CATALOG_DATA_PATH = path.join(DATA_PATH, 'catalogs/' + CATALOG_SCHEMA + '/')
+CATALOG_DATA_PATH = join(join(DATA_PATH, 'catalogs'), CATALOG_SCHEMA)
 
 # ${storm_id} is replaced with the storm's id (usually lower-cased storm name)
 CATALOG_FILE = '${storm_id}.csv'

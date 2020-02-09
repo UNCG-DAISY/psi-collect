@@ -79,7 +79,7 @@ class Storm:
 
                 # Older storms have a link to the AddedInfo.HTM with archives listed there
                 if len(re.findall(URL_STORMS_REGEX_PATTERN_ARCHIVE_GENERAL, r_text)) == 0 and self.storm_year < 2010:
-                    r_text = get_http_response(path.join(path.split(self.storm_url)[0], 'AddedInfo.HTM')).text
+                    r_text = get_http_response(path.split(self.storm_url)[0] + '/AddedInfo.HTM').text
 
             #########################################
             # Assemble a list of archives available #
@@ -91,7 +91,7 @@ class Storm:
                 if archive_url.startswith('http'):
                     url_list.append((archive_url, archive_type))
                 else:
-                    new_url = path.join(path.split(self.storm_url)[0], archive_url)
+                    new_url = path.split(self.storm_url)[0] + '/' + archive_url
                     if get_full_content_length(new_url) != 0:
                         url_list.append((new_url, archive_type))
 
