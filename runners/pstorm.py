@@ -8,8 +8,8 @@ from psicollect.common import h, s
 SELF_PATH = os.path.dirname(os.path.abspath(__file__))
 
 PATHS = {
-    'catalog': '../cataloging/catalog.py',
-    'collect': '../collector/collect.py'
+    'catalog': 'catalog.py',
+    'collect': 'collect.py'
 }
 
 
