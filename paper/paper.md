@@ -97,6 +97,7 @@ damage to the built environment [e.g., @Thomas2014], measure impact using the @S
 
 # Acknowledgements
 
+We thank Chris Leaman for a thoughtful review and several contributions to the code during the review process. 
 EBG acknowledges funding from NSF (Award #1939954), The Leverhulme Trust (RPG-2018-282), and an Early-Career Research
 Fellowship from the Gulf Research Program of the National Academies of Sciences, Engineering, and Medicine. The content
 is solely the responsibility of the authors and does not necessarily represent the official views of the Gulf Research
