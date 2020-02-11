@@ -62,15 +62,14 @@ they have downloaded. A cataloging tool is also supplied, which allows users to 
 information for each image such as image name, acquisition data, file size, and latitude and longitude for each corner
 of image (extracted from the associated `.geom` file). This catalog can be used for statistical and spatial analysis. 
 
-`psi-collect` works to address four issues that enable researchers to work with large collections of NOAA post storm aerial 
-imagery. 
+`psi-collect` addresses four issues experienced by researchers working with large collections of NOAA post storm aerial imagery. 
 
-First, users previously needed to manually navigate to each storm and individually download the multiple image tar / zip 
-files. Download could be done with the graphical user interface, or via another technique (e.g., `wget` on Linux). Even though 
+First, users previously needed to manually navigate to each storm and individually download the multiple image `.tar`/ `.zip` 
+archives. Download could be done with the graphical user interface, or via another technique (e.g., `wget` on Linux). Even though 
 `wget` is a command line method for retrieving the data, users would still be required to manually navigate and include 
 individual web addresses for each storm archive (e.g., there are 15 individual archives for Hurricane Florence). `psi-collect` 
 dynamically traverses pages and downloads archives when given specific filtering/sub-setting criteria (i.e., downloading all 
-archives from Hurricane Florence)
+archives from Hurricane Florence).
 
 Second, the individual image archives are large, and often freeze or terminate during download. Some browsers or software 
 tools may be capable of resuming partial downloads, but this is case specific and depends on the retrieval workflow. 
