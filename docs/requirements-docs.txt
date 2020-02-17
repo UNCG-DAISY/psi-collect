@@ -1,4 +1,4 @@
-markdown==3.2
+markdown==3.2.1
 mkdocs==1.0.4
 mkdocs-git-revision-date-plugin==0.2
 mkdocs-macros-plugin==0.2.4
