@@ -47,9 +47,9 @@ storm impacts along developed and undeveloped coastlines [@Madore2018].
 Post-event imagery is typically large, both in terms of the number of individual image files and the size of each file. For 
 example, Hurricane Florence (2018) has over 29,000 JPEG images, with an average size of 7.7 Mb. The first steps for extracting 
 information from these data involve acquiring and processing images. NOAA ERI is currently available as a Web Map 
-Tile Service or via download using a graphical user interface (directing users to the relevant tar and ZIP archive) [Add reference to website]. To enable 
-users to download NOAA ERI images via command line for use in reproducible computational workflows, we developed a Python 
-module (`psi-collect`). 
+Tile Service or via download using a graphical user interface 
+[directing users to the relevant tar and ZIP archive; @NOAA2020]. To enable users to download NOAA ERI images via command line 
+for use in reproducible computational workflows, we developed a Python module (`psi-collect`). 
 
 The key functionality of `psi-collect` is it allows users to download specific tar and ZIP archives based on storm name,
 date of image acquisition (day, month, and/or year), and/or image type (JPEG, TIFF). Users can also filter and select specific 
@@ -62,14 +62,13 @@ they have downloaded. A cataloging tool is also supplied, which allows users to 
 information for each image such as image name, acquisition data, file size, and latitude and longitude for each corner
 of image (extracted from the associated `.geom` file). This catalog can be used for statistical and spatial analyses. 
 
-`psi-collect` addresses four issues experienced by researchers working with large collections of NOAA post storm aerial imagery. 
-
-First, users previously needed to manually navigate to each storm and individually download the multiple image `.tar`/ `.zip` 
-archives. Download could be done with the graphical user interface, or via another technique (e.g., `wget` on Linux). Even though 
-`wget` is a command line method for retrieving the data, users would still be required to manually navigate and include 
-individual web addresses for each storm archive (e.g., there are 15 individual archives for Hurricane Florence). `psi-collect` 
-dynamically traverses pages and downloads archives when given specific filtering/sub-setting criteria (i.e., downloading all 
-archives from Hurricane Florence).
+`psi-collect` addresses four issues experienced by researchers working with large collections of NOAA post storm aerial 
+imagery. First, users previously needed to manually navigate to each storm and individually download the multiple image 
+`.tar`/ `.zip` archives. Download could be done with the graphical user interface, or via another technique (e.g., `wget` on 
+Linux). Even though `wget` is a command line method for retrieving the data, users would still be required to manually 
+navigate and include individual web addresses for each storm archive (e.g., there are 15 individual archives for Hurricane 
+Florence). `psi-collect` dynamically traverses pages and downloads archives when given specific filtering/sub-setting criteria 
+(i.e., downloading all archives from Hurricane Florence).
 
 Second, the individual image archives are large, and downloads often freeze or terminate early. Some browsers or software 
 tools may be capable of resuming partial downloads, but this is case specific and depends on the retrieval workflow. 
@@ -90,10 +89,10 @@ downloading is complete (and the archive is fully uploaded). This file is update
 `psi-collect` enables scientists to download NOAA Emergency Response Imagery via Python in a variety of ways (via date, 
 storm),and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` could be 
 used to develop reproducible computational workflows to analyze post-event imagery. For example, images can be used to: assess 
-damage to the built environment [e.g., @Thomas2014], measure impact in the context of predicted/hindcast @Sallenger2000 Storm Impact Scale regime [e.g., 
-@Liu2014; @Goldstein2020], evaluate forecasts of storm impact [@Morgan2019], measure the morphology of storm deposits [e.g., 
-@Overbeck2015; @Lazarus2016], and study how human development controls the shape of sediment and debris deposits [e.g., 
-@Rogers2015].
+damage to the built environment [e.g., @Thomas2014], categorize impact in the context of the @Sallenger2000 Storm 
+Impact Scale regime [e.g., @Liu2014; @Goldstein2020], evaluate forecasts of storm impact [@Morgan2019], measure the morphology 
+of storm deposits [e.g., @Overbeck2015; @Lazarus2016], and study how human development controls the shape of sediment and 
+debris deposits [e.g., @Rogers2015].
 
 # Acknowledgements
 
