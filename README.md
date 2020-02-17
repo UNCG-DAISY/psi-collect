@@ -40,9 +40,7 @@ Quick Start:
 2. Run `pip3 install psi-collect` in your favorite terminal
 3. Run `pstorm collect -h` for help on collecting images or `pstorm catalog -h` for help on cataloging local archives
 
-For a more detailed description (with examples) see the detailed 'Usage' section in the Documentation for [**Collecting**]
-(https://psi-collect.readthedocs.io/en/master/collector/) and [**Cataloging**](https://psi-
-collect.readthedocs.io/en/master/cataloging/)
+Check out the documentation for [**Collecting**](https://psi-collect.readthedocs.io/en/master/collector/) and [**Cataloging**](https://psi-collect.readthedocs.io/en/master/cataloging/) images to see some examples
 
 ## Contributing / Developing
 
