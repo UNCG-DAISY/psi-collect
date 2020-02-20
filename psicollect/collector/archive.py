@@ -291,7 +291,7 @@ class Archive:
             if os.path.exists(os.path.join(extract_dir_path, os.path.split(name)[1])) is False:
                 print('\rCreating \t' + name + ' ... ', end='')
                 f.extract(member, extract_dir_path)
-            elif member.name != '.':
+            elif name != '.':
                 print('\rSkipping \t' + name + ' as it already exists ... ', end='')
 
         f.close()
