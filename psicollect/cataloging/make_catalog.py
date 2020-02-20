@@ -170,7 +170,8 @@ class Cataloging:
                 entry: dict = dict()
                 entry['file'] = files[i]
                 entry['storm_id'] = Cataloging._get_storm_from_path(os.path.join(scope_path, files[i])).lower()
-                entry['archive'] = Cataloging._get_archive_from_path(os.path.join(scope_path, files[i])).lower()
+                entry['archive'] = Cataloging._get_archive_from_path(scope_path=os.path.join(scope_path, files[i]),
+                                                                     storm_id=entry['storm_id']).lower()
                 entry['image'] = Cataloging._get_image_from_path(os.path.join(scope_path, files[i]))
                 entries.append(entry)
 
@@ -416,7 +417,7 @@ class Cataloging:
             return path_tail
 
     @staticmethod
-    def _get_archive_from_path(scope_path: Union[bytes, str] = None) -> str:
+    def _get_archive_from_path(scope_path: Union[bytes, str], storm_id: str) -> str:
 
         scope_path = h.validate_and_expand_path(scope_path)
 
@@ -427,14 +428,14 @@ class Cataloging:
 
             raise PathParsingException(objective='the archive name')
 
-        if ('20' in path_tail and '_' in path_tail) is False or scope_path == s.DATA_PATH:
-            # If the current directory does not look like an archive name or is the data path
+        if os.path.split(path_head)[1].lower() == storm_id:
+            # If the parent directory is the storm directory
 
-            # Keep recursively checking each directory to match the pattern (traverse back through path)
-            return Cataloging._get_archive_from_path(scope_path=os.path.split(scope_path)[0])
+            return path_tail
 
         else:
-            return path_tail
+            # Keep recursively checking each directory to match the pattern (traverse back through path)
+            return Cataloging._get_archive_from_path(scope_path=os.path.split(scope_path)[0], storm_id=storm_id)
 
     @staticmethod
     def _force_save_catalog(catalog: pd.DataFrame, scope_path: Union[bytes, str]):
