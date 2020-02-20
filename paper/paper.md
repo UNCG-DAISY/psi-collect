@@ -75,7 +75,7 @@ tools may be capable of resuming partial downloads, but this is case specific an
 Terminated downloads may require users to determine the missing archive, and re-initiate a download. `psi-collect` implements 
 both automatic resumption and post-download integrity checks to manage download interruption.
 
-Third, we have observed that download speeds can be slow. `psi-collect` handles queuing of downloads, and cataloging what 
+Third, we have observed that download speeds of NOAA ERI imagery can be slow. `psi-collect` handles queuing of downloads and cataloging what 
 downloads exist on a user's local computer. These features aid users when multiple archives are needed.
 
 Fourth, `psi-collect` implements a soft locking mechanism allowing users to simultaneously download archives on multiple 
@@ -87,7 +87,7 @@ downloading is complete (and the archive is fully uploaded). This file is update
 # Statement of Need
 
 `psi-collect` enables scientists to download NOAA Emergency Response Imagery via Python in a variety of ways (via date, 
-storm),and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` could be 
+storm) and obtain metrics on downloaded images though the cataloging functions. We envision that `psi-collect` could be 
 used to develop reproducible computational workflows to analyze post-event imagery. For example, images can be used to: assess 
 damage to the built environment [e.g., @Thomas2014], categorize impact in the context of the @Sallenger2000 Storm 
 Impact Scale [e.g., @Liu2014; @Goldstein2020], evaluate forecasts of storm impact [@Morgan2019], measure the morphology 
