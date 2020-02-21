@@ -12,7 +12,7 @@ with open('README.md', 'r', encoding='utf8') as fh:
 
 setup(
     name='psi-collect',
-    version='1.0.2',
+    version='1.0.3',
     author='PSI Team',
     description='Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.',
     classifiers=[
