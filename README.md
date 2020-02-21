@@ -61,7 +61,7 @@ Before committing to the repository **please** read the project
 3. You will need to add the module path `<parent dir>/psi-collect/psicollect/` to your `PYTHONPATH`
    (See [**Configuring Module**](https://psi-collect.readthedocs.io/en/master/configure_python_path/))
 
-*If you get an error message that looks something like `Module not found: "psic"`,
+*If you get an error message that looks something like `Module not found: "psicollect"`,
 then the `PYTHONPATH` is not configured correctly!*
 
 ***You will need this in order to run the project.***
