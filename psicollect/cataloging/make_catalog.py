@@ -170,7 +170,8 @@ class Cataloging:
                 entry: dict = dict()
                 entry['file'] = files[i]
                 entry['storm_id'] = Cataloging._get_storm_from_path(os.path.join(scope_path, files[i])).lower()
-                entry['archive'] = Cataloging._get_archive_from_path(os.path.join(scope_path, files[i])).lower()
+                entry['archive'] = Cataloging._get_archive_from_path(scope_path=os.path.join(scope_path, files[i]),
+                                                                     storm_id=entry['storm_id']).lower()
                 entry['image'] = Cataloging._get_image_from_path(os.path.join(scope_path, files[i]))
                 entries.append(entry)
 
@@ -197,11 +198,26 @@ class Cataloging:
             if 'date' in current_fields_needed:
                 dates: List[str] = list()
 
+                stat_count_missing_date: int = 0
+
                 for i in range(len(files)):
 
                     print(f'\rGetting date taken from file {i + 1} of {len(files)} ({round((i / len(files)) * 100, 2)}%) ' +
                           '.' * (math.floor(((i + 1) % 9) / 3) + 1), end=' ')
-                    dates.append(Cataloging._get_best_date(os.path.join(scope_path, files[i])))
+
+                    best_date: str or None = Cataloging._get_best_date(os.path.join(scope_path, files[i]))
+
+                    if best_date is None:
+                        # If no date can be found, leave the entry blank
+                        dates.append(np.nan)
+                        stat_count_missing_date += 1
+                    else:
+                        dates.append(Cataloging._get_best_date(os.path.join(scope_path, files[i])))
+
+                if stat_count_missing_date > 0:
+                    print(str(stat_count_missing_date) + ' images had unknown dates!')
+                else:
+                    print('DONE')
 
                 catalog['date'] = dates
                 flag_unsaved_changes = True
@@ -256,6 +272,7 @@ class Cataloging:
                 flag_unsaved_changes = True
 
         stat_files_accessed: int = 0
+        stat_count_missing_geom: int = 0
 
         # For any remaining fields needed (i.e. ll_lat), look for them in the .geom files
         for i, row in catalog.iterrows():
@@ -294,8 +311,18 @@ class Cataloging:
                         scope_path, os.path.normpath(row['file'])), debug=debug, verbosity=verbosity)
                 stat_files_accessed += 1
 
-                if geom_data is not None:
+                if geom_data is None:
+                    # The geom file does not exist
 
+                    geom_data = dict()
+
+                    for field_id in row_fields_needed:
+                        # Since no .geom file was found, fill with nan values
+                        geom_data[field_id] = np.nan
+
+                    stat_count_missing_geom += 1
+
+                else:
                     # Store the values in the catalog's respective column by field name, in memory
                     for key, value in geom_data.items():
                         try:
@@ -322,6 +349,11 @@ class Cataloging:
                       ' .geom files accessed) ... ', end='')
                 Cataloging._force_save_catalog(catalog=catalog, scope_path=scope_path)
 
+        if stat_count_missing_geom > 0:
+            print(str(stat_count_missing_geom) + ' images were missing a .geom file!')
+        else:
+            print('DONE')
+
         if debug:
             print('\r')
 
@@ -341,7 +373,7 @@ class Cataloging:
     @staticmethod
     def _get_best_date(file_path: Union[bytes, str],
                        debug: bool = s.DEFAULT_DEBUG,
-                       verbosity: int = s.DEFAULT_VERBOSITY) -> str:
+                       verbosity: int = s.DEFAULT_VERBOSITY) -> str or None:
 
         # Assume years can only be 2000 to 2099 (current unix time ends at 2038 anyways)
         pattern: Pattern = re.compile('[\\D]*(20\\d{2})(\\d{2})(\\d{2})\\D')
@@ -360,10 +392,11 @@ class Cataloging:
 
             return year + '/' + month + '/' + day
 
-        # If no date can be parsed from file path or file name, then fallback to timestamp (sometimes off by a day)
+        # If no date can be parsed from file path or file name, then leave blank
         else:
-            h.print_error('Could not find any date in ' + file_path + ' ... resorting to file modify time!')
-            return Cataloging._timestamp_to_utc(os.path.getmtime(file_path))
+            if debug:
+                h.print_error('Could not find any date in ' + file_path + ' ... leaving it blank!')
+            return None
 
     @staticmethod
     def _timestamp_to_utc(timestamp: str or int) -> str:
@@ -416,7 +449,7 @@ class Cataloging:
             return path_tail
 
     @staticmethod
-    def _get_archive_from_path(scope_path: Union[bytes, str] = None) -> str:
+    def _get_archive_from_path(scope_path: Union[bytes, str], storm_id: str) -> str:
 
         scope_path = h.validate_and_expand_path(scope_path)
 
@@ -427,14 +460,14 @@ class Cataloging:
 
             raise PathParsingException(objective='the archive name')
 
-        if ('20' in path_tail and '_' in path_tail) is False or scope_path == s.DATA_PATH:
-            # If the current directory does not look like an archive name or is the data path
+        if os.path.split(path_head)[1].lower() == storm_id:
+            # If the parent directory is the storm directory
 
-            # Keep recursively checking each directory to match the pattern (traverse back through path)
-            return Cataloging._get_archive_from_path(scope_path=os.path.split(scope_path)[0])
+            return path_tail
 
         else:
-            return path_tail
+            # Keep recursively checking each directory to match the pattern (traverse back through path)
+            return Cataloging._get_archive_from_path(scope_path=os.path.split(scope_path)[0], storm_id=storm_id)
 
     @staticmethod
     def _force_save_catalog(catalog: pd.DataFrame, scope_path: Union[bytes, str]):
@@ -485,12 +518,9 @@ class Cataloging:
         result: Dict[str] = dict()
 
         if os.path.exists(geom_path) is False:
-            h.print_error('\n\nCould not find .geom file for "' + file_path + '": "' + geom_path + '"')
-            for field_id in field_id_set:
-                # Since no .geom file was found, fill with nan values
-                result[field_id] = np.nan
-
-            return result
+            if debug:
+                h.print_error('Could not find .geom file for "' + file_path + '": "' + geom_path + '"')
+            return None
 
         if os.path.getsize(geom_path) == 0:
             h.print_error('\n\nThe .geom file for "' + file_path + '": "' + geom_path + '" is 0 KiBs.\n'
