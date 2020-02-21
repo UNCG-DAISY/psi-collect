@@ -58,7 +58,7 @@ Before committing to the repository **please** read the project
 
 1. Python 3.6, 3.7, or 3.8 [**(Download Here)**](https://www.python.org/downloads/)
 2. Pipenv **(Run `pip install pipenv`)**
-3. You will need to add the folder containing the `psic` module (`src/python` by default) to your `PYTHONPATH`
+3. You will need to add the module path `<parent dir>/psi-collect/psicollect/` to your `PYTHONPATH`
    (See [**Configuring Module**](https://psi-collect.readthedocs.io/en/master/configure_python_path/))
 
 *If you get an error message that looks something like `Module not found: "psic"`,
