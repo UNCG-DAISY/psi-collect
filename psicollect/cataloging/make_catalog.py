@@ -272,6 +272,7 @@ class Cataloging:
                 flag_unsaved_changes = True
 
         stat_files_accessed: int = 0
+        stat_count_missing_geom: int = 0
 
         # For any remaining fields needed (i.e. ll_lat), look for them in the .geom files
         for i, row in catalog.iterrows():
@@ -310,8 +311,18 @@ class Cataloging:
                         scope_path, os.path.normpath(row['file'])), debug=debug, verbosity=verbosity)
                 stat_files_accessed += 1
 
-                if geom_data is not None:
+                if geom_data is None:
+                    # The geom file does not exist
 
+                    geom_data = dict()
+
+                    for field_id in row_fields_needed:
+                        # Since no .geom file was found, fill with nan values
+                        geom_data[field_id] = np.nan
+
+                    stat_count_missing_geom += 1
+
+                else:
                     # Store the values in the catalog's respective column by field name, in memory
                     for key, value in geom_data.items():
                         try:
@@ -337,6 +348,11 @@ class Cataloging:
                 print('\rSaving catalog to disk (' + str(stat_files_accessed) +
                       ' .geom files accessed) ... ', end='')
                 Cataloging._force_save_catalog(catalog=catalog, scope_path=scope_path)
+
+        if stat_count_missing_geom > 0:
+            print(str(stat_count_missing_geom) + ' images were missing a .geom file!')
+        else:
+            print('DONE')
 
         if debug:
             print('\r')
@@ -378,7 +394,7 @@ class Cataloging:
 
         # If no date can be parsed from file path or file name, then leave blank
         else:
-            if debug is True:
+            if debug:
                 h.print_error('Could not find any date in ' + file_path + ' ... leaving it blank!')
             return None
 
@@ -502,12 +518,9 @@ class Cataloging:
         result: Dict[str] = dict()
 
         if os.path.exists(geom_path) is False:
-            h.print_error('\n\nCould not find .geom file for "' + file_path + '": "' + geom_path + '"')
-            for field_id in field_id_set:
-                # Since no .geom file was found, fill with nan values
-                result[field_id] = np.nan
-
-            return result
+            if debug:
+                h.print_error('Could not find .geom file for "' + file_path + '": "' + geom_path + '"')
+            return None
 
         if os.path.getsize(geom_path) == 0:
             h.print_error('\n\nThe .geom file for "' + file_path + '": "' + geom_path + '" is 0 KiBs.\n'
