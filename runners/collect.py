@@ -63,6 +63,10 @@ c = ConnectionHandler()
 
 storms: List[Storm] = c.get_storm_list(OPTIONS.storm)
 
+if len(storms) == 0:  # pragma: no cover
+    h.print_error('No storms matched the expression provided for --storm / -s: "' + OPTIONS.storm + '"')
+    exit(1)
+
 # Only display status report if user requests it, otherwise just start downloads
 if OPTIONS.no_status is False:
 
