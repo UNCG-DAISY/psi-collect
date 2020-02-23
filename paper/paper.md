@@ -75,8 +75,8 @@ tools may be capable of resuming partial downloads, but this is case specific an
 Terminated downloads may require users to determine the missing archive, and re-initiate a download. `psi-collect` implements 
 both automatic resumption and post-download integrity checks to manage download interruption.
 
-Third, we have observed that download speeds of NOAA ERI imagery can be slow. `psi-collect` handles queuing of downloads and cataloging what 
-downloads exist on a user's local computer. These features aid users when multiple archives are needed.
+Third, we have observed that download speeds of NOAA ERI imagery can be slow. `psi-collect` handles queuing of downloads and 
+cataloging what downloads exist on a user's local computer. These features aid users when multiple archives are needed.
 
 Fourth, `psi-collect` implements a soft locking mechanism allowing users to simultaneously download archives on multiple 
 computers that upload to a single network file system or integrate with a distributed file systems (e.g., Hadoop). The locking 
@@ -96,11 +96,10 @@ debris deposits [e.g., @Rogers2015].
 
 # Acknowledgements
 
-We thank Chris Leaman for a thoughtful review and several contributions to the code during the review process. 
-EBG acknowledges funding from NSF (Award #1939954), The Leverhulme Trust (RPG-2018-282), and an Early-Career Research
-Fellowship from the Gulf Research Program of the National Academies of Sciences, Engineering, and Medicine. The content
-is solely the responsibility of the authors and does not necessarily represent the official views of the Gulf Research
-Program of the National Academies of Sciences, Engineering, and Medicine.
-
+We thank Chris Leaman, Katherine Ratliff, Matt Conlin, and Katy Barnhart for their thoughtful reviews and contributions to the 
+code. EBG acknowledges funding from NSF (Award #1939954), The Leverhulme Trust (RPG-2018-282), and an Early-Career Research 
+Fellowship from the Gulf Research Program of the National Academies of Sciences, Engineering, and Medicine. The content is 
+solely the responsibility of the authors and does not necessarily represent the official views of the Gulf Research Program of 
+the National Academies of Sciences, Engineering, and Medicine.
 
 # References
