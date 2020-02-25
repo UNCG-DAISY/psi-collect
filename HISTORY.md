@@ -20,3 +20,8 @@
 - Improve reliability of recognition of archive directories
 - Improve output of cataloging and reduce repetitive messages
 - Add message to known when no storms match a search expression
+
+## v1.0.4
+
+- Fix some minor errors in the README
+- Finalize review process for JOSS
