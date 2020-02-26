@@ -6,12 +6,12 @@ https://pypi.org/project/psi-collect)
 https://travis-ci.org/UNCG-DAISY/psi-collect)
 [![Codecov](https://img.shields.io/codecov/c/gh/UNCG-DAISY/psi-collect)](
 https://codecov.io/gh/UNCG-DAISY/psi-collect)
-[![Dependabot](https://api.dependabot.com/badges/status?host=github&repo=UNCG-DAISY/psi-collect)](
-https://dependabot.com)
 [![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
 https://psi-collect.readthedocs.io/en/master/)
 [![Last Commit](https://img.shields.io/github/last-commit/UNCG-DAISY/psi-collect)](
 https://github.com/UNCG-DAISY/psi-collect/commits/master)
+[![DOI](https://zenodo.org/badge/226186823.svg)](
+https://zenodo.org/badge/latestdoi/226186823)
 [![JOSS](https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813/status.svg)](
 https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813)
 
