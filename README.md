@@ -15,7 +15,9 @@ https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813)
 [![DOI](https://zenodo.org/badge/226186823.svg)](
 https://zenodo.org/badge/latestdoi/226186823)
 
-This package downloads, catalogs, and stores NOAA emergency response imagery
+Collection, aggregation, and cataloging of NOAA post-storm emergency response imagery.
+
+This package helps users (researchers, managers, etc.) download, analyze, and store aerial imagery taken after hurricane events that have impacted the USA.
 
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
 https://psi-collect.readthedocs.io/en/master/)
@@ -83,13 +85,3 @@ then the `PYTHONPATH` is not configured correctly!*
 ## Data Source 💾
 
 - NOAA landing page for the post-storm Emergency Response Imagery, [**here**]( https://storms.ngs.noaa.gov)
-
-## An Example Use of `psi-collect`:
-
-### Labeling Imagery
-We labeled storm impacts for ~300 images from Hurricane Florence using the [Coastal Image Labeler](https://github.com/UNCG-DAISY/Coastal-Image-Labeler). The labels are available on [figshare](https://doi.org/10.6084/m9.figshare.11604192.v1).
-
-The specific NOAA imagery to link to these labels can be retrieved with `psi-collect` via:
-
-`pstorm collect -s Florence -a 20180917a_jpgs -d`
-
