@@ -4,3 +4,4 @@ pandas
 pillow
 imageio
 requests-html
+urllib3<1.25
