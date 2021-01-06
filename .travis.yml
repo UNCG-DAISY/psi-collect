@@ -29,7 +29,7 @@ matrix:
       - pip install -U pip
     install:
       - pip install -U tox-travis
-      travis_wait mvn install
+      - travis_wait mvn install
     script: tox
 
   - language: python
