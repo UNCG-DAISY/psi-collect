@@ -1,5 +1,6 @@
 import requests
 from requests import Response
+from requests_html import HTMLSession
 
 
 def get_http_response(url: str) -> Response:
@@ -10,7 +11,9 @@ def get_http_response(url: str) -> Response:
     """
 
     try:
-        r = requests.get(url)
+        session = HTMLSession()
+        r = session.get(url)
+        r.html.render()
         if r.status_code == requests.codes.ok:
             return r
         else:

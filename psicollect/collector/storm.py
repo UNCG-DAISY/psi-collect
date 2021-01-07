@@ -75,7 +75,7 @@ class Storm:
                 r_text = '"http://geodesy.noaa.gov/storm_archive/storms/apr11_tornado/jgw_met/all_world.zip"'
             else:
                 # Load the storm's index.html
-                r_text = get_http_response(self.storm_url).text
+                r_text = get_http_response(self.storm_url).html.html
 
                 # Older storms have a link to the AddedInfo.HTM with archives listed there
                 if len(re.findall(URL_STORMS_REGEX_PATTERN_ARCHIVE_GENERAL, r_text)) == 0 and self.storm_year < 2010:
