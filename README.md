@@ -18,10 +18,10 @@ https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813)
 [![DOI](https://zenodo.org/badge/226186823.svg)](
 https://zenodo.org/badge/latestdoi/226186823)
 
-This package downloads, catalogs, and stores [NOAA emergency response imagery]( https://storms.ngs.noaa.gov)
-
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
 https://psi-collect.readthedocs.io/en/master/)
+
+This package downloads, catalogs, and stores [NOAA emergency response imagery]( https://storms.ngs.noaa.gov)
 
 ## Usage
 
