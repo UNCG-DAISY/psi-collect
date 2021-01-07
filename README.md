@@ -25,17 +25,17 @@ This package downloads, catalogs, and stores [NOAA emergency response imagery]( 
 
 ## Usage
 
-Quick Start:
+Check out the documentation for [**Collecting**](https://psi-collect.readthedocs.io/en/master/collector/) and [**Cataloging**](https://psi-collect.readthedocs.io/en/master/cataloging/) images to see some examples
+
+### Quick Start:
 
 1. Install Python 3.6, 3.7, or 3.8 [**(Download Here)**](https://www.python.org/downloads/)
 2. Run `pip3 install psi-collect` in your favorite terminal
 3. Run `pstorm collect -h` for help on collecting images or `pstorm catalog -h` for help on cataloging local archives
 
-Check out the documentation for [**Collecting**](https://psi-collect.readthedocs.io/en/master/collector/) and [**Cataloging**](https://psi-collect.readthedocs.io/en/master/cataloging/) images to see some examples
 
-## An Example Use of `psi-collect`:
+### An Example Use of `psi-collect`: Labeling Imagery
 
-### Labeling Imagery
 We labeled storm impacts for ~300 images from Hurricane Florence using the [Coastal Image Labeler](https://github.com/UNCG-DAISY/Coastal-Image-Labeler). The labels are available on [figshare](https://doi.org/10.6084/m9.figshare.11604192.v1).
 
 The specific NOAA imagery to link to these labels can be retrieved with `psi-collect` via:
