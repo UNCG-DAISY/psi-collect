@@ -28,7 +28,7 @@ matrix:
     before_install:
       - pip install -U pip
     install:
-      - pip install -U tox-travis
+      -travis_wait pip install -U tox-travis
     script: tox
 
   - language: python
