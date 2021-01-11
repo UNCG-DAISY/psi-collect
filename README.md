@@ -23,16 +23,25 @@ https://psi-collect.readthedocs.io/en/master/)
 
 This package downloads, catalogs, and stores [NOAA emergency response imagery]( https://storms.ngs.noaa.gov)
 
-## Usage
+## Quick Start
 
-Check out the documentation for [**Collecting**](https://psi-collect.readthedocs.io/en/master/collector/) and [**Cataloging**](https://psi-collect.readthedocs.io/en/master/cataloging/) images to see some examples
+There are two ways to get started with `psi-collect` — using the version on PyPI or installing directly from this GitHub repository. The version currently on PyPI does not work with images from the two most recent Hurricanes (Hx Delta and Hx Zeta). The version here on GitHub is modified and works with these storms (but we still need to make a few more modifications before this new version is packeaged for PyPI).   
 
-### Quick Start:
+### from PyPI:
 
 1. Install Python 3.6, 3.7, or 3.8 [**(Download Here)**](https://www.python.org/downloads/)
 2. Run `pip3 install psi-collect` in your favorite terminal
 3. Run `pstorm collect -h` for help on collecting images or `pstorm catalog -h` for help on cataloging local archives
 
+### from GitHub Repository
+
+1. Make sure you have dependecies installed (check them out in `requirements.txt`)
+2. Run `pip install git+https://github.com/UNCG-DAISY/psi-collect` in your favorite terminal
+3. Run `pstorm collect -h` for help on collecting images or `pstorm catalog -h` for help on cataloging local archives
+
+### Usage Guide
+
+Check out the documentation for [**Collecting**](https://psi-collect.readthedocs.io/en/master/collector/) and [**Cataloging**](https://psi-collect.readthedocs.io/en/master/cataloging/) images to see usage.
 
 ### An Example Use of `psi-collect`: Labeling Imagery
 
