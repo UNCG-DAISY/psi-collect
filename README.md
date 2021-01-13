@@ -25,7 +25,7 @@ This package downloads, catalogs, and stores [NOAA emergency response imagery]( 
 
 ## Quick Start
 
-There are two ways to get started with `psi-collect` — using the version on PyPI or installing directly from this GitHub repository. The version currently on PyPI does not work with images from the two most recent Hurricanes (Hx Delta and Hx Zeta). The version here on GitHub is modified and works with these storms (but we still need to make a few more modifications before this new version is packeaged for PyPI).   
+There are two ways to get started with `psi-collect` — using the version on PyPI or installing directly from this GitHub repository. The version currently on PyPI does not work with images from the two most recent Hurricanes (Hx Delta and Hx Zeta). The version here on GitHub is modified and works with these storms (but we still need to make a few more modifications before this new version is packaged for PyPI).   
 
 ### from PyPI:
 
