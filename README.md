@@ -1,13 +1,11 @@
 # Post-Storm Imagery Collection
 
+[![Codecov](https://img.shields.io/codecov/c/gh/UNCG-DAISY/psi-collect)](
+https://codecov.io/gh/UNCG-DAISY/psi-collect)
 [![PyPI](https://img.shields.io/pypi/v/psi-collect)](
 https://pypi.org/project/psi-collect)
 [![Travis-CI](https://travis-ci.org/UNCG-DAISY/psi-collect.svg?branch=master)](
 https://travis-ci.org/UNCG-DAISY/psi-collect)
-[![Codecov](https://img.shields.io/codecov/c/gh/UNCG-DAISY/psi-collect)](
-https://codecov.io/gh/UNCG-DAISY/psi-collect)
-[![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
-https://psi-collect.readthedocs.io/en/master/)
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/UNCG-DAISY/psi-collect/graphs/commit-activity)
 [![Last Commit](https://img.shields.io/github/last-commit/UNCG-DAISY/psi-collect)](
@@ -18,6 +16,8 @@ https://joss.theoj.org/papers/890cc9edd3ec2aafeba9616e8c5f7813)
 [![DOI](https://zenodo.org/badge/226186823.svg)](
 https://zenodo.org/badge/latestdoi/226186823)
 
+[![ReadTheDocs](https://readthedocs.org/projects/psi-collect/badge/?version=master)](
+https://psi-collect.readthedocs.io/en/master/)
 [![Documentation](https://img.shields.io/badge/Documentation-Click%20Me-brightgreen)](
 https://psi-collect.readthedocs.io/en/master/)
 
