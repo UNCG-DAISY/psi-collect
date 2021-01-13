@@ -29,12 +29,13 @@ There are two ways to get started with `psi-collect` — using the version on Py
 
 ### from PyPI:
 
-1. Install Python 3.6, 3.7, or 3.8 [**(Download Here)**](https://www.python.org/downloads/)
-2. Run `pip3 install psi-collect` in your favorite terminal
-3. Run `pstorm collect -h` for help on collecting images or `pstorm catalog -h` for help on cataloging local archives
+0. Install Python 3.6, 3.7, or 3.8 [**(Download Here)**](https://www.python.org/downloads/)
+1. Run `pip3 install psi-collect` in your favorite terminal
+2. Run `pstorm collect -h` for help on collecting images or `pstorm catalog -h` for help on cataloging local archives
 
 ### from GitHub Repository
 
+0. Install Python 3.6, 3.7, or 3.8 [**(Download Here)**](https://www.python.org/downloads/)
 1. Make sure you have dependecies installed (check them out in `requirements.txt`)
 2. Run `pip install git+https://github.com/UNCG-DAISY/psi-collect` in your favorite terminal
 3. Run `pstorm collect -h` for help on collecting images or `pstorm catalog -h` for help on cataloging local archives
